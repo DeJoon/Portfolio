@@ -1,85 +1,51 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import CardBox from './components/CardBox.vue'
+import CardRow from './components/card/CardRow.vue'
+import {ref} from "vue";
+
+const calculateAge = () => {
+  const birthdate = new Date('10.04.2001')
+  const difference = new Date(Date.now() - birthdate.getTime())
+
+  return Math.abs(difference.getUTCFullYear() - 1970)
+};
+
+const profile = ref([
+  { title: 'Name:', value: 'Jan Lukas Dein' },
+  { title: 'Geburtstag:', value: '04.10.2001' },
+  { title: 'Alter:', value: calculateAge() },
+  { title: 'Geschlecht:', value: 'Männlich' },
+  { title: 'Nationalität:', value: 'Deutsch' },
+  { title: 'Geburtsort:', value: 'Kaiserslautern in Deutschland' },
+])
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <h1 class="text-sm-center">Portfolio von Jan Lukas Dein</h1>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+  <h2>Steckbrief</h2>
+  <CardBox>
+    <CardRow v-for="(item, index) in profile" :key="index" :title="item.title" :text="item.value" />
+  </CardBox>
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+  <h2>Über mich</h2>
+  <div class="text-justify">
+    Ich bin ein junger Mann und interessiere mich sehr für die Programmierung. Dabei habe ich schon vieles
+    ausprobiert, ob in der Schule, auf der Arbeit und privat. Dabei konnte ich mir Kenntnisse über verschiedene
+    Programmiersprachen und Technologien aneignen. Ein paar davon sind unten aufgelistet :)
+    <br /><br />
+    In meiner Freizeit lese ich gerne oder bewege mich. Entweder gehe ich einfach laufen, treffe mich mit Freunden
+    oder gehe ins Fitnessstudio. Zu Hause lese ich gerne oder spiele Videospiele mit Freunden.
+  </div>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+  h2 {
+    padding-top: 2rem;
+    padding-bottom: .5rem;
   }
 
-  .logo {
-    margin: 0 2rem 0 0;
+  .text-justify {
+    text-align: justify;
   }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
 </style>
