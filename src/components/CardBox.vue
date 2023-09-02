@@ -3,22 +3,13 @@
 </script>
 
 <template>
-  <div class="card container">
+  <div class="card-box py-3">
     <slot></slot>
   </div>
 </template>
 
 <style scoped>
-.card {
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-
-  :slotted(*) {
-    border-bottom: 1px solid var(--color-border);
-  }
-
-  :slotted(*:last-child) {
-    border-bottom: unset;
-  }
+:slotted(div) {
+  padding-bottom: .5rem;
 }
 </style>

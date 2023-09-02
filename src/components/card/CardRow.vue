@@ -12,16 +12,17 @@ defineProps({
 </script>
 
 <template>
-  <div class="row">
-    <div class="col">{{ title }}</div>
-    <div class="col">{{ text }}</div>
+  <div class="card-row">
+    <div class="title">{{ title }}</div>
+    <div>{{ text }}</div>
   </div>
-
 </template>
 
 <style scoped>
-.row {
-  padding-top: .5em;
-  padding-bottom: .5em;
+.card-row {
+  .title {
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
 }
 </style>
