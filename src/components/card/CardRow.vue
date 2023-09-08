@@ -14,7 +14,7 @@ defineProps({
 <template>
   <div class="card-row">
     <div class="title">{{ title }}</div>
-    <div>{{ text }}</div>
+    <div class="text">{{ text }}</div>
   </div>
 </template>
 
@@ -23,6 +23,10 @@ defineProps({
   .title {
     font-weight: bold;
     letter-spacing: 2px;
+  }
+
+  .text {
+    color: #575757;
   }
 }
 </style>
