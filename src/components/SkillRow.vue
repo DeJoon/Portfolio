@@ -66,6 +66,7 @@ const width = computed(() => {
 
   .progress {
     height: 6px;
+    background-color: white;
 
     .progress-bar {
       border-radius: 0;

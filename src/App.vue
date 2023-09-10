@@ -1,8 +1,11 @@
 <script setup>
 import CardBox from '@/components/CardBox.vue'
-import CardRow from '@/components/card/CardRow.vue'
+import CardRow from '@/components/CardBox/CardRow.vue'
 import SkillRow from "@/components/SkillRow.vue";
 import ExperienceBox from "@/components/ExperienceBox.vue";
+import SectionHeader from "@/components/SectionHeader.vue";
+import LinkIcon from "@/components/LinkIcon.vue";
+import FunFactCard from "@/components/FunFactCard.vue";
 import { ref } from "vue";
 
 const calculateAge = () => {
@@ -26,6 +29,14 @@ const skills = ref([
   {title: 'JavaScript', percentage: '50'},
   {title: 'Vue', percentage: '50'},
 ])
+const funFacts = ref([
+  {icon: ['fas', 'cat'], amount: 1000, text: 'Katzen Videos geschaut'}
+])
+const findMeOnPages = ref([
+  {href: 'https://github.com/DeJoon', icon: ['fab', 'github']},
+  {href: 'TODO', icon: ['fab', 'square-xing']},
+  {href: 'mailto:jandein04@gmail.com', icon: ['fas', 'envelope']},
+])
 </script>
 
 <template>
@@ -41,9 +52,9 @@ const skills = ref([
     </div>
   </div>
 
-  <div class="main p-4">
+  <div class="p-4">
     <div class="about-me text-center">
-      <h2 class="mb-5">Über mich</h2>
+      <SectionHeader title="Über mich" />
       <img src="#" alt="Ich" class="profile-picture" />
       <div>
         Ich bin Jan und ein gelernter Fachinformatiker im Bereich der Anwendungsentwicklung.
@@ -58,14 +69,16 @@ const skills = ref([
         <CardRow v-for="(item, index) in profile" :key="index" :title="item.title" :text="item.value"/>
       </CardBox>
     </div>
+  </div>
 
+  <div class="bg-highlight p-4">
     <div class="skills mt-5">
-      <h2 class="text-center mb-3">Skills</h2>
+      <SectionHeader title="Skills" />
       <SkillRow v-for="(item, index) in skills" :key="index" :title="item.title" :percentage="item.percentage" />
     </div>
 
     <div class="experience mt-5">
-      <h2 class="text-center mb-3">Erfahrung</h2>
+      <SectionHeader title="Erfahrung" />
 
       <div class="content">
         <ExperienceBox title="Ausbildung">
@@ -80,7 +93,7 @@ const skills = ref([
           erfolgreich meine Ausbildung abgeschlossen. Meine Ausbildung endete nach drei Jahren im Juli 2023.
         </ExperienceBox>
 
-        <ExperienceBox title="PHP / Symfony Framework">
+        <ExperienceBox title="PHP / Symfony">
           <template v-slot:icons>
             <font-awesome-icon :icon="['fab', 'php']" size="3x" />
             <font-awesome-icon :icon="['fab', 'symfony']" size="3x" />
@@ -162,6 +175,20 @@ const skills = ref([
       </div>
     </div>
   </div>
+
+  <div class="fun-facts p-4">
+    <FunFactCard v-for="(item, key) in funFacts" :key="key" :text="item.text" :amount="item.amount" :icon="item.icon" />
+  </div>
+
+  <div class="p-4 find-me-on">
+    <SectionHeader title="Find me on" />
+
+    <div class="container">
+      <div class="row text-center">
+        <LinkIcon v-for="(item, key) in findMeOnPages" :key="key" :href="item.href" :icon="item.icon" class="col" />
+      </div>
+    </div>
+  </div>
 </template>
 
 <style scoped>
@@ -176,26 +203,35 @@ const skills = ref([
   background-position: center;
 }
 
-.main {
-  .about-me {
-    .profile-picture {
-      height: 6rem;
-      width: 6rem;
-      display: inline-block;
-      border-radius: 100%;
-    }
+.about-me {
+  .profile-picture {
+    height: 6rem;
+    width: 6rem;
+    display: inline-block;
+    border-radius: 100%;
+  }
+}
+
+.bg-highlight {
+  background-color: #f0f0f0;
+}
+
+.experience {
+  .content {
+    border-left: 1px solid #575757;
+    padding-left: 1rem;
   }
 
-  .experience {
-    .content {
-      border-left: 1px solid #575757;
-      padding-left: 1rem;
-      margin-left: 8px;
-    }
-
-    .experience-box {
-      margin-top: 1.5rem;
-    }
+  .experience-box {
+    margin-top: 2rem;
   }
+}
+
+.fun-facts {
+  background-color: #e8208e;
+}
+
+.find-me-on a {
+  color: black;
 }
 </style>

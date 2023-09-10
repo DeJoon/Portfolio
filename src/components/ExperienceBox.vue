@@ -15,15 +15,15 @@ const uuid = crypto.randomUUID().toString()
 <template>
   <div class="container experience-box">
     <div class="row align-items-center justify-content-between" data-bs-toggle="collapse" :data-bs-target="'#' + uuid" aria-expanded="false" :aria-controls="uuid">
-      <h4 class="col-10">{{ title }}</h4>
-      <font-awesome-icon :icon="['fas', 'angle-down']" class="col-1 mt-2" />
+      <h4 class="col-10 mb-0">{{ title }}</h4>
+      <font-awesome-icon :icon="['fas', 'angle-down']" class="col-1" />
     </div>
 
-    <div v-if="showIcons" class="row py-3 icons">
+    <div v-if="showIcons" class="row my-3 icons">
       <slot name="icons" />
     </div>
 
-    <div class="row collapse" :id="uuid">
+    <div class="row collapse" :class="{'mt-3': false === showIcons}" :id="uuid">
       <div class="col card card-body">
         <slot />
       </div>
