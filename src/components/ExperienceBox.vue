@@ -32,9 +32,13 @@ const uuid = crypto.randomUUID().toString()
 </template>
 
 <style scoped>
-.icons {
-  :slotted(*) {
-    flex: 1 0 0;
+.experience-box {
+  margin-top: 2rem;
+
+  .icons {
+    :slotted(*) {
+      flex: 1 0 0;
+    }
   }
 }
 </style>

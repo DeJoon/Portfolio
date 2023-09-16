@@ -16,7 +16,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="container">
+  <div class="container p-3">
     <div class="row text-center">
       <div class="col-12"><font-awesome-icon :icon="icon" size="3x" /></div>
       <div class="col-12 my-2 fw-bold fs-1">{{ amount }}</div>

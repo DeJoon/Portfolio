@@ -11,7 +11,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest'
   },
-  ignorePattern: [
+  ignorePatterns: [
       '*.min.css'
   ]
 }
