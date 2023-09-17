@@ -2,8 +2,9 @@
 import IntroductionView from "@/views/IntroductionView.vue";
 import AboutMeView from "@/views/AboutMeView.vue";
 import ExperienceView from "@/views/ExperienceView.vue";
+import ResumeView from "@/views/ResumeView.vue";
+import LanguageView from "@/views/LanguageView.vue";
 import FunFactsView from "@/views/FunFactsView.vue";
-import JobStatusView from "@/views/JobStatusView.vue";
 import FindMeOnView from "@/views/FindMeOnView.vue";
 </script>
 
@@ -12,11 +13,13 @@ import FindMeOnView from "@/views/FindMeOnView.vue";
 
   <AboutMeView />
 
-  <ExperienceView />
+  <ExperienceView class="highlighted" />
+
+  <ResumeView />
+
+  <LanguageView />
 
   <FunFactsView />
-
-  <JobStatusView />
 
   <FindMeOnView />
 </template>

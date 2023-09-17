@@ -24,8 +24,8 @@ const profile = ref([
   <div class="p-4">
     <div class="about-me text-center">
       <SectionHeader title="Über mich" />
-      <img src="#" alt="Ich" class="profile-picture" />
-      <div>
+      <img src="../assets/img/me.png" alt="Ich" class="profile-picture" />
+      <div class="mt-3">
         Ich bin Jan und ein gelernter Fachinformatiker im Bereich der Anwendungsentwicklung.
         Dabei arbeite ich sehr gerne mit verschiedenen Technologien und Frameworks.
         Meine größte Stärke ist dabei die Entwicklung des Backends, kann aber auch nach Angaben das Frontend gestalten.
@@ -41,13 +41,16 @@ const profile = ref([
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "../assets/colors";
+
 .about-me {
   .profile-picture {
-    height: 6rem;
-    width: 6rem;
+    width: 8rem;
     display: inline-block;
     border-radius: 100%;
+    border: 1px solid;
+    background-color: $color-scheme-200;
   }
 }
 </style>

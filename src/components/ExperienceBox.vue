@@ -14,7 +14,7 @@ const uuid = crypto.randomUUID().toString()
 
 <template>
   <div class="container experience-box">
-    <div class="row align-items-center justify-content-between" data-bs-toggle="collapse" :data-bs-target="'#' + uuid" aria-expanded="false" :aria-controls="uuid">
+    <div class="row align-items-center justify-content-between pointer" data-bs-toggle="collapse" :data-bs-target="'#' + uuid" aria-expanded="false" :aria-controls="uuid">
       <h4 class="col-10 mb-0">{{ title }}</h4>
       <font-awesome-icon :icon="['fas', 'angle-down']" class="col-1" />
     </div>
@@ -40,5 +40,9 @@ const uuid = crypto.randomUUID().toString()
       flex: 1 0 0;
     }
   }
+}
+
+.pointer {
+  cursor: pointer;
 }
 </style>

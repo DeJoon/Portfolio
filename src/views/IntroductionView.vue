@@ -3,21 +3,29 @@
 </script>
 
 <template>
-  <div class="introduction text-center align-middle px-3 text-white">
-    <h2>cout&lt;&lt;"Hello World";</h2>
-    <h1 class="my-4 lh-sm">Mein Name ist Jan Lukas Dein</h1>
-    <div>
-      und mit dieser Ausgabe wurde mein Interesse an der Programmierung geweckt
+  <div class="introduction px-3 text-white d-flex justify-content-center align-items-center">
+    <div class="text-center">
+      <h2>cout&lt;&lt;"Hello World";</h2>
+      <h1 class="my-4 lh-sm">Mein Name ist Jan Lukas Dein</h1>
+      <div>
+        und mit dieser Ausgabe wurde mein Interesse an der Programmierung geweckt
+      </div>
     </div>
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "../assets/colors";
+
+h1, h2 {
+  color: $white;
+}
+
 .introduction {
   height: 100vh;
-  padding-top: 100%;
+  position: relative;
 
-  background-image: url("../assets/img/cat.jpg");
+  background-image: url("../assets/img/balou.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;

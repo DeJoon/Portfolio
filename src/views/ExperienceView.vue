@@ -14,7 +14,7 @@ const skills = ref([
 </script>
 
 <template>
-  <div class="highlighted p-4">
+  <div class="p-4">
     <div class="skills mt-5">
       <SectionHeader title="Skills" />
       <SkillRow v-for="(item, index) in skills" :key="index" :title="item.title" :percentage="item.percentage" />
