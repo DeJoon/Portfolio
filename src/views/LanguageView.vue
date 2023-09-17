@@ -13,7 +13,7 @@ const languages = ref([
   <div class="p-4">
     <SectionHeader title="Sprachen" />
 
-    <table class="table">
+    <table class="table text-center">
       <thead>
       <tr>
         <th scope="col">Sprache</th>

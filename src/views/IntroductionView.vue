@@ -30,5 +30,9 @@ h1, h2 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: 512px) {
+    background-size: contain;
+  }
 }
 </style>

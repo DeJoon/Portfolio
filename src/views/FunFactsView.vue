@@ -11,8 +11,10 @@ const funFacts = ref([
 </script>
 
 <template>
-  <div class="fun-facts p-4">
-    <FunFactCard v-for="(item, key) in funFacts" :key="key" :text="item.text" :amount="item.amount" :icon="item.icon" />
+  <div class="fun-facts p-4 container">
+    <div class="row">
+      <FunFactCard v-for="(item, key) in funFacts" :key="key" :text="item.text" :amount="item.amount" :icon="item.icon" class="col-12 col-sm-6" />
+    </div>
   </div>
 </template>
 
