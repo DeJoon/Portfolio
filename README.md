@@ -1,14 +1,11 @@
 # Portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+This Portfolio was created by me, Jan Lukas Dein, to act like a CV for myself.
+In this project I will list all the things I know and what I have done in the past.
 
-## Recommended IDE Setup
+This project is a Vue 3 based project, which is used as a Single Page Application in this case.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Recommended IDE for this Project is [WebStorm by JetBrains](https://www.jetbrains.com/webstorm/)
 
 ## Project Setup
 
