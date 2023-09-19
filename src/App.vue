@@ -29,5 +29,6 @@ import FindMeOnView from "@/views/FindMeOnView.vue";
 
 .highlighted {
   background-color: $color-scheme-50;
+  border-radius: 10px;
 }
 </style>

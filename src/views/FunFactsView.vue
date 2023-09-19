@@ -24,5 +24,6 @@ const funFacts = ref([
 .fun-facts {
   background-color: $color-scheme-900;
   color: $color-scheme-50;
+  border-radius: 10px;
 }
 </style>
