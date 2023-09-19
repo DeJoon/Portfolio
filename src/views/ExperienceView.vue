@@ -30,10 +30,10 @@ const skills = ref([
           </template>
 
           Nach dem Abschluss meines Fachabiturs habe ich direkt meine Ausbildung als Fachinformatiker in der
-          Anwendungsentwicklung begonnen. Dabei habe ich in einem Betrieb gearbeitet, welcher eine E-Commerce
-          Plattform für Reifen und andere Autoteile anbot und dadurch in der Webentwicklung tätig war. Dabei bin ich
-          mit verschiedenen Sprachen und Technologien in Berührung gekommen und habe im selben Betrieb auch
-          erfolgreich meine Ausbildung abgeschlossen. Meine Ausbildung endete nach drei Jahren im Juli 2023.
+          Anwendungsentwicklung begonnen. Während dieser Zeit arbeitete ich in einem Unternehmen, das eine
+          E-Commerce-Plattform für Reifen und andere Autoteile entwickelte und somit im Bereich Webentwicklung tätig
+          war. Dabei kam ich mit verschiedenen Programmiersprachen und Technologien in Kontakt und konnte meine
+          Ausbildung erfolgreich abschließen. Diese endete im Juli 2023, nach einer Dauer von drei Jahren.
         </ExperienceBox>
 
         <ExperienceBox title="PHP / Symfony">
@@ -42,14 +42,14 @@ const skills = ref([
             <font-awesome-icon :icon="['fab', 'symfony']" size="3x" />
           </template>
 
-          In meiner Ausbildung als Anwendungsentwickler habe ich in einem Betrieb gearbeitet, welcher in der
-          Webentwicklung tätig war. Dabei wurde auf PHP für das Backend gesetzt. Dabei kam vor allem das Symfony
-          Framework zum Einsatz. Durch Symfony habe ich gelernt wie man Endpunkte gestaltet, Eingaben und Ausgaben
-          verarbeitet und selbige auch Dokumentiert. Über die Jahre habe ich dabei viele Endpunkte geschrieben und an
-          vielen verschiedenen Projekten gearbeitet. Darunter war auch ein CLI-Projekt, welches für Commands oder
-          RabbitMQ Consumer verwendet wurde. Für das Umsetzen von Mockups wurden die Templatesprachen Smarty und Twig
-          verwendet. Um Stylesheets ein wenig einfacher zu gestalten wurde oft auf SCSS zurück gegriffen. Als CSS
-          Framework diente dabei häufig Bootstrap.
+          Während meiner Ausbildung als Anwendungsentwickler habe ich in einem Unternehmen gearbeitet, das im
+          Bereich Webentwicklung tätig war. In dieser Zeit haben ich hauptsächlich PHP für das Backend eingesetzt,
+          wobei das Symfony Framework eine zentrale Rolle spielte. Durch Symfony habe ich gelernt, wie man Endpunkte
+          gestaltet, Eingaben und Ausgaben verarbeitet und diese dokumentiert. Im Laufe der Jahre habe ich zahlreiche
+          Endpunkte erstellt und an verschiedenen Projekten mitgearbeitet. Darunter befand sich auch ein CLI-Projekt,
+          das für Befehle oder RabbitMQ Consumer verwendet wurde. Für das Umsetzen von Mockups verwendeten ich die
+          Templatesprachen Smarty und Twig. Um die Gestaltung von Stylesheets zu erleichtern, griffen ich oft
+          auf SCSS zurück. Außerdem kenne ich mich mit dem CSS-Framework Bootstrap aus.
         </ExperienceBox>
 
         <ExperienceBox title="Versionsverwaltung">
@@ -59,12 +59,12 @@ const skills = ref([
             <font-awesome-icon :icon="['fab', 'gitlab']" size="3x" />
           </template>
 
-          Für einen Entwickler sollte es selbstverständlich sein mit einer Versionskontrolle zu arbeiten, gerade
-          wenn es sich dabei um ein Projekt in einer professionellen Umgebung handelt. Man kann Git dabei wohl als
-          die größte Versionsverwaltung bezeichnen. Dabei bin ich mit den gängigsten Git Techniken vertraut und habe
-          auch schon manuell mit Git Releases erstellt, Back merges gemacht oder auch mal mit Cherry-Pick gearbeitet.
-          Für die Versionsverwaltung auf dem Server habe ich entweder GitLab oder GitHub verwendet, wobei ich GitLab
-          nur auf der Arbeit benutzt habe. Privat benutze ich ausschließlich GitHub.
+          Für einen Entwickler sollte es selbstverständlich sein, mit einer Versionskontrolle zu arbeiten,
+          insbesondere in einer professionellen Umgebung. Git kann zweifellos als die führende Versionsverwaltung
+          angesehen werden. Ich bin mit den gängigsten Git-Techniken vertraut und habe bereits manuell Git-Releases
+          erstellt, Back-Merges durchgeführt und auch gelegentlich Cherry-Pick angewendet. Für die Versionsverwaltung
+          auf dem Server habe ich entweder GitLab oder GitHub verwendet. Bei meiner Arbeit habe ich hauptsächlich
+          GitLab genutzt, während ich privat ausschließlich GitHub verwende.
         </ExperienceBox>
 
         <ExperienceBox title="Tests">
@@ -72,14 +72,16 @@ const skills = ref([
             <font-awesome-icon :icon="['fas', 'microscope']" size="3x" />
           </template>
 
-          Für das Testen meines Codes habe ich Unit Test und Behat Tests geschrieben. Um die Unit Tests zu schreiben
-          wurde dabei PHPUnit benutzt. Dabei wurden einzelne Klassen ausgiebig getestet. Wenn eine Klasse Änderungen
-          an der Datenbank macht, oder Daten aus dieser Abruft, wurde sicher gestellt, dass der SQL immer gleich ist.
-          Diese Tests waren gerade in Packages bzw. Bundles sehr wichtig, da das Ändern des Codes zu einem Breaking
-          Change führen kann, wofür eine neue Version veröffentlicht werden muss, um keinen bestehenden Code instabil
-          zu machen. Behat Tests wurden dann zusätzlich noch für die API Projekte benutzt, um zu überprüfen, ob
-          die Endpunkte sich nach gewissen Vorgaben verhalten. Dies ist auch wieder für alte API Versionen wichtig,
-          damit Implementierungen mit älteren Versionen nicht kaputt gehen.
+          Für das Testen meines Codes habe ich sowohl Unit Tests als auch Behat Tests geschrieben. Zur Erstellung der
+          Unit Tests habe ich PHPUnit verwendet, um einzelne Klassen ausgiebig zu testen. Wenn eine Klasse Änderungen
+          an der Datenbank vornahm oder Daten daraus abrief, habe ich sichergestellt, dass die SQL-Abfragen immer
+          gleich blieben. Diese Tests waren besonders in Packages oder Bundles von großer Bedeutung, da Änderungen im
+          Code zu Breaking Changes führen konnten. In solchen Fällen war es notwendig, eine neue Version zu
+          veröffentlichen, um die Stabilität des bestehenden Codes nicht zu gefährden.
+          <br /><br />
+          Behat Tests wurden zusätzlich für die API-Projekte verwendet, um sicherzustellen, dass die Endpunkte gemäß
+          bestimmten Vorgaben funktionierten. Dies war insbesondere wichtig für ältere API-Versionen,
+          um sicherzustellen, dass Implementierungen mit älteren Versionen nicht beeinträchtigt wurden.
         </ExperienceBox>
 
         <ExperienceBox title="CI/CD (Jenkins)">
@@ -87,33 +89,35 @@ const skills = ref([
             <font-awesome-icon :icon="['fab', 'jenkins']" size="3x" />
           </template>
 
-          Beim Entwickeln von Software sollte die Qualitätssicherung einen hohen Stellenwert haben. Jeder kennt das
-          Gefühl, wenn ein Programm oder eine Webseite nicht so funktioniert, wie sie soll. Tests alleine reichen
-          dafür meist nicht aus. Wenn keine Tests ausgeführt werden, dann können auch keine fehlschlagen. Um zu
-          verhindern, dass eine instabile Codebasis gemerget wird, habe ich in meiner Ausbildung Jenkins benutzt.
-          Dabei war es zwar nicht meine Aufgabe, diesen zu konfigurieren, jedoch habe ich mit Jenkins täglich die
-          Stabilität meines Codes geprüft. Außerdem habe ich Jenkins benutzt, um beim Release den Code auf die
-          Webserver zu deployen. Außerdem wurde GitLab bei uns so konfiguriert, dass ein Merge in main/master/develop
-          nur dann möglich war, wenn Jenkins vorher die Qualität sicher gestellt hat.
+          Bei der Entwicklung von Software sollte die Qualitätssicherung einen hohen Stellenwert haben. Jeder kennt
+          das Gefühl, wenn ein Programm oder eine Webseite nicht so funktioniert, wie sie soll. Allein auf Tests zu
+          vertrauen, reicht in der Regel nicht aus. Wenn keine Tests durchgeführt werden, können auch keine Fehler
+          entdeckt werden. Um sicherzustellen, dass eine instabile Codebasis nicht gemergt wird, habe ich während
+          meiner Ausbildung Jenkins eingesetzt. Obwohl es nicht meine Hauptaufgabe war, Jenkins zu konfigurieren,
+          habe ich täglich damit die Stabilität meines Codes überprüft. Darüber hinaus habe ich Jenkins verwendet,
+          um den Code beim Release auf die Webserver zu deployen. Bei uns wurde GitLab so konfiguriert, dass ein Merge
+          in den Branches main/master/develop nur dann möglich war, wenn Jenkins zuvor die
+          Qualität sichergestellt hatte.
         </ExperienceBox>
 
         <ExperienceBox title="C#">
-          Angefangen habe ich mit C# im Zuge meines Fachabiturs auf der BBS1 Technik Kaiserslautern mit Schwerpunkt
-          auf Anwendungsentwicklung. Dabei habe ich schnell gemerkt, dass mir die Sprache und auch die IDE von
-          Microsoft sehr gefällt. Als ich dann auch noch ein Praktikum in einem Unternehmen gemacht habe, in dem ich
-          C# für ein Projekt benutzen musste, wurde mein Interesse für die Sprache erst richtig geweckt. Darauf hin
-          habe ich mich privat sehr viel mit der Sprache auseinander gesetzt. Dabei habe ich auch auf verschiedene
-          Erweiterungen wie beispielsweise LINQ oder SQLKata als Query Builder für meine SQLite Datenbank gesetzt.
+          Meine Reise mit C# begann während meines Fachabiturs an der BBS1 Technik Kaiserslautern, wo ich mich auf
+          Anwendungsentwicklung spezialisierte. Hier entdeckte ich schnell meine Vorliebe für die Programmiersprache
+          und die Entwicklungsumgebung von Microsoft. Während eines Praktikums in einem Unternehmen, bei dem ich C#
+          für ein Projekt einsetzen musste, wurde mein Interesse an dieser Sprache weiter gestärkt. Dies motivierte
+          mich dazu, mich auch in meiner Freizeit intensiv mit C# zu beschäftigen. Während dieser Zeit erkundete
+          ich verschiedene Erweiterungen wie beispielsweise LINQ oder SQLKata, um sie als Query Builder für meine
+          SQLite-Datenbank zu verwenden.
         </ExperienceBox>
 
         <ExperienceBox title="MVVM (Caliburn Micro)">
-          Als ich mir C# beigebracht habe, verbrachte ich die meiste Zeit damit Windows Forms Programme zu schreiben.
-          Da man mit Windows Forms jedoch relativ eingeschränkt ist, was die skalierbarkeit der GUI angeht, habe ich
-          mich vermehrt mit WPF auseinander gesetzt. Auch wenn WPF auf den ersten Blick deutlich komplizierter ist,
-          hatte ich Spaß an der Herausforderung und konnte mich auch schnell daran gewöhnen. Jedoch erkannte ich auch
-          hier nach kurzer Zeit, dass das Arbeiten mit Daten in Textfeldern oder anderen Elementen sehr Zeitaufwendig
-          ist, habe ich mich mit MVVM auseinander gesetzt. Also Framework habe ich Caliburn Micro verwendet, welches
-          sehr Anfängerfreundlich, aber dennoch mächtig ist.
+          Als ich mir C# beigebracht habe, habe ich die meiste Zeit damit verbracht, Windows Forms-Anwendungen zu
+          entwickeln. Da Windows Forms in Bezug auf die Skalierbarkeit der grafischen Benutzeroberfläche relativ
+          eingeschränkt ist, habe ich mich verstärkt mit WPF auseinandergesetzt. Obwohl WPF auf den ersten Blick
+          deutlich komplexer erscheint, habe ich die Herausforderung genossen und konnte mich schnell damit vertraut
+          machen. Allerdings habe ich auch hier bald erkannt, dass die Arbeit mit Daten in Textfeldern und anderen
+          Elementen zeitaufwendig sein kann, weshalb ich mich mit MVVM auseinandergesetzt habe. Als Framework habe
+          ich Caliburn Micro verwendet, das sowohl für Anfänger geeignet als auch leistungsstark ist.
         </ExperienceBox>
       </div>
     </div>

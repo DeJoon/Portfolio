@@ -28,8 +28,9 @@ const profile = ref([
       <div class="mt-3">
         Ich bin Jan und ein gelernter Fachinformatiker im Bereich der Anwendungsentwicklung.
         Dabei arbeite ich sehr gerne mit verschiedenen Technologien und Frameworks.
-        Meine größte Stärke ist dabei die Entwicklung des Backends, kann aber auch nach Angaben das Frontend gestalten.
-        Im Team zu arbeiten ist für mich eine Selbstverständlichkeit, weshalb ich mich gerne im Team engagiere.
+        Meine größte Stärke liegt in der Backend-Entwicklung, aber ich kann auch das Frontend gestalten,
+        wenn erforderlich.
+        Im Team zu arbeiten ist für mich selbstverständlich, daher engagiere ich mich gerne im Team.
       </div>
     </div>
 
