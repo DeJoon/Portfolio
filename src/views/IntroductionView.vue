@@ -4,7 +4,7 @@
 
 <template>
   <div class="introduction px-3 text-white d-flex justify-content-center align-items-center">
-    <div class="text-center">
+    <div class="text text-center">
       <h2>cout&lt;&lt;"Hello World";</h2>
       <h1 class="my-4 lh-sm">Mein Name ist Jan Lukas Dein</h1>
       <div>
@@ -33,6 +33,12 @@ h1, h2 {
 
   @media (min-width: 512px) {
     background-size: contain;
+  }
+}
+
+.text {
+  @media (min-width: 512px) {
+    max-width: 482px;
   }
 }
 </style>
