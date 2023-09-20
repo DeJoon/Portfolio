@@ -12,6 +12,6 @@ module.exports = {
     ecmaVersion: 'latest'
   },
   ignorePatterns: [
-      '*.min.css'
+    '*.min.css'
   ]
 }

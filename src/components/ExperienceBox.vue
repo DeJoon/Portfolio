@@ -1,5 +1,5 @@
 <script setup>
-import {useSlots} from "vue";
+import {ref, useSlots} from "vue";
 
 defineProps({
   title: {
@@ -10,20 +10,25 @@ defineProps({
 
 const showIcons = undefined !== useSlots().icons
 const uuid = crypto.randomUUID().toString()
+const isCollapsed = ref(true)
 </script>
 
 <template>
   <div class="container experience-box">
-    <div class="row align-items-center justify-content-between pointer" data-bs-toggle="collapse" :data-bs-target="'#' + uuid" aria-expanded="false" :aria-controls="uuid">
-      <h4 class="col-10 mb-0">{{ title }}</h4>
-      <font-awesome-icon :icon="['fas', 'angle-down']" class="col-1" />
+    <div @click="isCollapsed = false === isCollapsed" class="pointer" data-bs-toggle="collapse" :data-bs-target="'#' + uuid" aria-expanded="false" :aria-controls="uuid">
+      <div class="row align-items-center justify-content-between">
+        <h4 class="col-10 mb-0">{{ title }}</h4>
+        <div class="col-1 transition-container" :class="{rotate: false === isCollapsed}">
+          <font-awesome-icon :icon="['fas', 'angle-down']" />
+        </div>
+      </div>
+
+      <div v-if="showIcons" class="row my-3 icons">
+          <slot name="icons" />
+      </div>
     </div>
 
-    <div v-if="showIcons" class="row my-3 icons">
-      <slot name="icons" />
-    </div>
-
-    <div class="row collapse" :class="{'mt-3': false === showIcons}" :id="uuid">
+    <div class="row collapse" @change="console.log('sui')" :class="{'mt-3': false === showIcons}" :id="uuid">
       <div class="col card card-body">
         <slot />
       </div>
@@ -31,7 +36,7 @@ const uuid = crypto.randomUUID().toString()
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .experience-box {
   margin-top: 2rem;
 
@@ -44,5 +49,15 @@ const uuid = crypto.randomUUID().toString()
 
 .pointer {
   cursor: pointer;
+}
+
+.transition-container {
+  svg {
+      transition: transform .25s ease-in-out;
+  }
+
+  &.rotate svg {
+      transform: rotate(180deg);
+  }
 }
 </style>

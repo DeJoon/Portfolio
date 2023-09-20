@@ -38,7 +38,7 @@ h1, h2 {
 
 .text {
   @media (min-width: 512px) {
-    max-width: 482px;
+    max-width: 50%;
   }
 }
 </style>
