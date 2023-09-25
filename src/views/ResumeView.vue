@@ -9,7 +9,7 @@ import ResumeCard from "@/components/ResumeCard.vue";
 
   <ResumeCard location="Kaiserslautern Deutschland" name="ALZURA AG" until="Jetzt">
     In diesem Unternehmen habe ich meine Ausbildung als Fachinformatiker Anwendungsentwicklung für 3 Jahre gemacht.
-    Danach wurde ich Vollzeit als Full-Stack Developer in der Webentwicklung eingesetzt.
+    Aktuell werde ich Vollzeit als Full-Stack Developer in der Webentwicklung eingesetzt.
   </ResumeCard>
 
   <ResumeCard location="BBS1-Technik Kaiserslautern Deutschland" name="Höhere Berufsfachschule Informationstechnik" until="August 2020">

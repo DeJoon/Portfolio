@@ -2,6 +2,7 @@
 import IntroductionView from "@/views/IntroductionView.vue";
 import AboutMeView from "@/views/AboutMeView.vue";
 import ExperienceView from "@/views/ExperienceView.vue";
+import ProjectsView from "@/views/ProjectsView.vue";
 import ResumeView from "@/views/ResumeView.vue";
 import LanguageView from "@/views/LanguageView.vue";
 import FunFactsView from "@/views/FunFactsView.vue";
@@ -15,7 +16,9 @@ import FindMeOnView from "@/views/FindMeOnView.vue";
 
   <ExperienceView class="highlighted" />
 
-  <ResumeView />
+  <ProjectsView />
+
+  <ResumeView class="highlighted mt-5" />
 
   <LanguageView />
 
