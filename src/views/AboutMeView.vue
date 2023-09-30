@@ -24,7 +24,7 @@ const profile = ref([
   <div class="p-4">
     <div class="about-me text-center">
       <SectionHeader title="Über mich" />
-      <img src="../assets/img/me.png" alt="Ich" class="profile-picture" />
+      <img src="../assets/img/me.jpg" alt="Ich" class="profile-picture" />
       <div class="mt-3">
         Ich bin Jan und ein gelernter Fachinformatiker im Bereich der Anwendungsentwicklung.
         Dabei arbeite ich sehr gerne mit verschiedenen Technologien und Frameworks.
@@ -47,7 +47,7 @@ const profile = ref([
 
 .about-me {
   .profile-picture {
-    width: 8rem;
+    width: 16rem;
     display: inline-block;
     border-radius: 100%;
     border: 1px solid;
