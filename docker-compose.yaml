@@ -1,0 +1,5 @@
+services:
+    portfolio:
+        build: ./
+        image: production-stage
+        restart: always
