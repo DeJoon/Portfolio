@@ -1,6 +1,5 @@
 <script setup>
 import {onMounted, ref, useSlots} from "vue";
-import crypto from "node:crypto";
 
 defineProps({
   title: {
@@ -10,7 +9,7 @@ defineProps({
 })
 
 const showIcons = undefined !== useSlots().icons
-const uuid = crypto.randomUUID().toString()
+const uuid = crypto.randomUUID()
 const isCollapsed = ref(true)
 const collapse = ref(null)
 
