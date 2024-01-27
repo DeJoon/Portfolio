@@ -1,6 +1,5 @@
 <script setup>
 import {onMounted, ref, useSlots} from "vue";
-import "crypto";
 
 defineProps({
   title: {
