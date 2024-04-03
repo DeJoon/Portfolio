@@ -5,7 +5,7 @@ In this project I will list all the things I know and what I have done in the pa
 
 This project is a Vue 3 based project, which is used as a Single Page Application in this case.
 
-Visit the website under https://cv.jan-dein.de
+Visit the website under https://cv.jan-dein.com
 
 ## Recommended IDE for this Project is [WebStorm by JetBrains](https://www.jetbrains.com/webstorm/)
 
