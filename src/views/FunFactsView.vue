@@ -5,8 +5,8 @@ import {ref} from "vue";
 const funFacts = ref([
   {icon: ['fas', 'cat'], amount: 1000, text: 'Katzen Videos geschaut'},
   {icon: ['far', 'eye'], amount: 220, text: 'Serien abgeschlossen'},
-  {icon: ['fas', 'book'], amount: 150, text: 'Manga im Besitz'},
-  {icon: ['fas', 'language'], amount: 5, text: 'Japanisch Units in Duolingo gelernt'},
+  {icon: ['fas', 'book'], amount: 230, text: 'Manga im Besitz'},
+  {icon: ['fas', 'desktop'], amount: 15, text: 'Gehostete Webseiten'},
 ])
 </script>
 

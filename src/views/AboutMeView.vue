@@ -16,7 +16,7 @@ const profile = ref([
   {title: 'Geburtstag:', value: '04. Oktober 2001'},
   {title: 'Alter:', value: calculateAge()},
   {title: 'Geschlecht:', value: 'Männlich'},
-  {title: 'E-Mail:', value: 'jandein04@gmail.com'},
+  {title: 'E-Mail:', value: 'jandein04+business@gmail.com'},
 ])
 </script>
 

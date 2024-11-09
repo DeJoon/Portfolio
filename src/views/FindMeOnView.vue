@@ -5,8 +5,8 @@ import {ref} from "vue";
 
 const findMeOnPages = ref([
   {href: 'https://github.com/DeJoon', icon: ['fab', 'github']},
-  {href: 'https://www.xing.com/profile/JanLukas_Dein', icon: ['fab', 'square-xing']},
-  {href: 'mailto:jandein04@gmail.com', icon: ['fas', 'envelope']},
+  {href: 'https://discord.com', icon: ['fab', 'discord'], text: '@dejoon'},
+  {href: 'mailto:jandein04+business@gmail.com', icon: ['fas', 'envelope']},
 ])
 </script>
 
@@ -16,7 +16,7 @@ const findMeOnPages = ref([
 
     <div class="container">
       <div class="row text-center">
-        <LinkIcon v-for="(item, key) in findMeOnPages" :key="key" :href="item.href" :icon="item.icon" class="col" />
+        <LinkIcon v-for="(item, key) in findMeOnPages" :key="key" :href="item.href" :icon="item.icon" :text="item.text ?? ''" class="col" />
       </div>
     </div>
   </div>

@@ -5,7 +5,7 @@ import {ref} from "vue";
 const languages = ref([
   {language: 'Deutsch', niveau: 'Muttersprache'},
   {language: 'Englisch', niveau: 'C1'},
-  {language: 'Japanisch', niveau: 'A1'},
+  {language: 'Japanisch', niveau: 'Anfänger'},
 ])
 </script>
 
