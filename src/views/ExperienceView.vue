@@ -7,7 +7,7 @@ import {ref} from "vue";
 const skills = ref([
   {title: 'PHP', percentage: '85'},
   {title: 'HTML/CSS', percentage: '80'},
-  {title: 'C#', percentage: '75'},
+  {title: 'C#', percentage: '60'},
   {title: 'JavaScript', percentage: '50'},
   {title: 'Vue', percentage: '50'},
 ])
@@ -118,6 +118,49 @@ const skills = ref([
           machen. Allerdings habe ich auch hier bald erkannt, dass die Arbeit mit Daten in Textfeldern und anderen
           Elementen zeitaufwendig sein kann, weshalb ich mich mit MVVM auseinandergesetzt habe. Als Framework habe
           ich Caliburn Micro verwendet, das sowohl für Anfänger geeignet als auch leistungsstark ist.
+        </CollapseBox>
+        
+        <CollapseBox title="Servermanagement">
+          <template v-slot:icons>
+            <font-awesome-icon :icon="['fab', 'cloudflare']" size="3x" />
+            <font-awesome-icon :icon="['fas', 'server']" size="3x" />
+            <font-awesome-icon :icon="['fab', 'ubuntu']" size="3x" />
+            <font-awesome-icon :icon="['fab', 'docker']" size="3x" />
+          </template>
+
+          Ein Freund hat mir viel von seinem Server bei sich zu Hause erzählt. Das Ganze hat sich für
+          mich so interessant angehört, dass ich mich dazu entschieden habe, mir auch einen Server
+          zu holen. Das Betriebssystem auf meinem Server ist Proxmox. Das Gute an Proxmox ist, dass
+          es komplett auf VMs basiert. Das bedeutet, dass es eine Plattform bietet, um VMs zu erstellen
+          und zu verwalten. Dazu gehört auch das gesamte Management der VMs, wie Monitoring oder
+          Backup-Systeme. Für Proxmox habe ich mich auf die Empfehlung eines Freundes hin entschieden.
+          <br /><br />
+          Auf meinem Server laufen aktuell mehrere VMs, die verschiedene Aufgaben haben. Um den
+          Speicher der VMs zu managen, kommt bei mir TrueNAS Scale zum Einsatz, das selbst auch in
+          einer VM läuft. TrueNAS kümmert sich um das Freigeben von sogenannten "Shares", die alle
+          ihre eigenen Rechte haben. Die VMs unter TrueNAS binden diese Shares ein und können dann
+          ganz normal den Speicherplatz nutzen, der von TrueNAS verwaltet wird, als gehöre der
+          Speicher zum System.
+          <br /><br />
+          Auf allen VMs, außer der TrueNAS-VM, läuft Ubuntu Server. Zum Hosten verschiedener
+          Services und Webseiten kommt dabei häufig Docker/Docker Compose zum Einsatz. Ich bin ein
+          großer Fan von Docker, da Docker es einem sehr einfach macht, Webseiten auf verschiedenen
+          Systemen zu hosten, ohne die Systeme anpassen zu müssen. Man konfiguriert einfach Docker
+          bzw. schreibt seine Dockerfile und führt diese aus, und schon läuft alles so, wie es soll.
+          Auch die Webseite, auf der Sie sich aktuell befinden, läuft in einem Docker-Container mit
+          Vue.js als Basis. Diese Webseite wird von mir privat gehostet. Sollten Sie Interesse an
+          dem Code dieser Webseite haben, dann schauen Sie gerne auf meiner GitHub Seite vorbei,
+          welche Sie ganz unten auf der Webseite finden.
+          <br /><br />
+          Natürlich spielt Sicherheit eine große Rolle im Internet. Eine gute Firewall ist
+          unverzichtbar, wenn man Webseiten hostet. Als Firewall benutze ich bei mir zu Hause die
+          eingebaute Firewall meiner FRITZ!Box. Außerdem gebe ich nur Webseiten/Services nach außen
+          hin frei, die auch wirklich von außen erreichbar sein sollen. Zusätzlich halte ich alle
+          meine Webseiten und Betriebssysteme stets aktuell, um so viele Sicherheitslücken wie möglich
+          zu schließen.
+          <br /><br />
+          Mittlerweile hoste ich über meinen Server ca. 15 Webseiten und Services, die ich stetig
+          aktuell halte.
         </CollapseBox>
       </div>
     </div>
