@@ -4,6 +4,4 @@ services:
         image: production-stage
         restart: always
         ports:
-            - "127.0.0.1:8000:80"
-        volumes:
-            - "./nginx.conf:/etc/nginx/nginx.conf"
+            - "8000:80"
