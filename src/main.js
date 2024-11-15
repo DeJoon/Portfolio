@@ -1,3 +1,4 @@
+
 import './assets/main.min.css'
 
 import { createApp } from 'vue'
@@ -5,6 +6,10 @@ import App from './App.vue'
 import router from './router'
 
 import 'bootstrap/dist/js/bootstrap.min.js'
+
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
+import '@fortawesome/fontawesome-svg-core/styles.css';
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fas } from "@fortawesome/free-solid-svg-icons"
