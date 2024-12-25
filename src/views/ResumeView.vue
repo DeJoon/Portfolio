@@ -32,7 +32,7 @@ const { t } = useI18n();
       :until="t('cv.education.until')"
       :from="t('cv.education.from')"
     >
-      {{ t('cv.bbs1.text') }}
+      {{ t('cv.education.text') }}
     </ResumeCard>
   </div>
 </template>
