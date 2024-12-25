@@ -4,7 +4,7 @@
 
 <template>
   <div class="card-box py-3">
-    <slot></slot>
+    <slot />
   </div>
 </template>
 

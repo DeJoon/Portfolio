@@ -1,45 +1,64 @@
 <script setup>
-import {onMounted, ref, useSlots} from "vue";
+import {onMounted, ref, useSlots} from 'vue';
 
 defineProps({
   title: {
     type: String,
-    required: true
-  }
-})
+    required: true,
+  },
+});
 
-const showIcons = undefined !== useSlots().icons
-const uuid = crypto.randomUUID()
-const isCollapsed = ref(true)
-const collapse = ref(null)
+const showIcons = undefined !== useSlots().icons;
+const uuid = crypto.randomUUID();
+const isCollapsed = ref(true);
+const collapse = ref(null);
 
 onMounted(() => {
   collapse.value?.addEventListener('show.bs.collapse', () => {
-    isCollapsed.value = false
-  })
+    isCollapsed.value = false;
+  });
 
   collapse.value?.addEventListener('hide.bs.collapse', () => {
-    isCollapsed.value = true
-  })
-})
+    isCollapsed.value = true;
+  });
+});
 </script>
 
 <template>
   <div class="container experience-box">
-    <div class="pointer" data-bs-toggle="collapse" :data-bs-target="'#' + uuid" aria-expanded="false" :aria-controls="uuid">
+    <div
+      class="pointer"
+      data-bs-toggle="collapse"
+      :data-bs-target="'#' + uuid"
+      aria-expanded="false"
+      :aria-controls="uuid"
+    >
       <div class="row align-items-center justify-content-between">
-        <h4 class="col-10 mb-0">{{ title }}</h4>
-        <div class="col-1 transition-container" :class="{rotate: false === isCollapsed}">
+        <h4 class="col-10 mb-0">
+          {{ title }}
+        </h4>
+        <div
+          class="col-1 transition-container"
+          :class="{rotate: false === isCollapsed}"
+        >
           <font-awesome-icon :icon="['fas', 'angle-down']" />
         </div>
       </div>
 
-      <div v-if="showIcons" class="row my-3 icons">
-          <slot name="icons" />
+      <div
+        v-if="showIcons"
+        class="row my-3 icons"
+      >
+        <slot name="icons" />
       </div>
     </div>
 
-    <div class="row collapse" :class="{'mt-3': false === showIcons}" :id="uuid" ref="collapse">
+    <div
+      :id="uuid"
+      ref="collapse"
+      class="row collapse"
+      :class="{'mt-3': false === showIcons}"
+    >
       <div class="col card card-body">
         <slot />
       </div>

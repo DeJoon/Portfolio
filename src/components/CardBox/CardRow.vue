@@ -2,19 +2,23 @@
 defineProps({
   title: {
     type: String,
-    required: true
+    required: true,
   },
   text: {
     type: String,
-    required: true
-  }
-})
+    required: true,
+  },
+});
 </script>
 
 <template>
   <div class="card-row">
-    <div class="title">{{ title }}:</div>
-    <div class="text">{{ text }}</div>
+    <div class="title">
+      {{ title }}:
+    </div>
+    <div class="text">
+      {{ text }}
+    </div>
   </div>
 </template>
 

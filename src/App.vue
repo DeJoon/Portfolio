@@ -1,28 +1,29 @@
 <script setup>
-import IntroductionView from '@/views/IntroductionView.vue'
-import AboutMeView from '@/views/AboutMeView.vue'
-import ExperienceView from '@/views/ExperienceView.vue'
-import ProjectsView from '@/views/ProjectsView.vue'
-import ResumeView from '@/views/ResumeView.vue'
-import LanguageView from '@/views/LanguageView.vue'
-import FunFactsView from '@/views/FunFactsView.vue'
-import FindMeOnView from '@/views/FindMeOnView.vue'
-import { useRoute, useRouter } from 'vue-router'
-import { ref, watch } from 'vue'
-import { useI18n } from 'vue-i18n'
+import { ref, watch } from 'vue';
+import { useI18n } from 'vue-i18n';
+import { useRoute, useRouter } from 'vue-router';
+import AboutMeView from '@/views/AboutMeView.vue';
+import ExperienceView from '@/views/ExperienceView.vue';
+import FindMeOnView from '@/views/FindMeOnView.vue';
+import FunFactsView from '@/views/FunFactsView.vue';
+import IntroductionView from '@/views/IntroductionView.vue';
+import LanguageView from '@/views/LanguageView.vue';
+import ProjectsView from '@/views/ProjectsView.vue';
+import ResumeView from '@/views/ResumeView.vue';
 
-const { locale, availableLocales, fallbackLocale } = useI18n({ useScope: 'global' })
 
-const route = useRoute()
+const { locale, availableLocales, fallbackLocale } = useI18n({ useScope: 'global' });
+
+const route = useRoute();
 const router = useRouter();
-const selectedLocale = ref(locale.value)
+const selectedLocale = ref(locale.value);
 
 const updateLocale = () => {
   const newLocale = availableLocales.includes(selectedLocale.value) ? selectedLocale.value : fallbackLocale.value;
   locale.value = newLocale;
   selectedLocale.value = newLocale;
-  router.push({ query: { locale: newLocale } })
-}
+  router.push({ query: { locale: newLocale } });
+};
 
 watch(
   () => route.query,
@@ -31,19 +32,23 @@ watch(
     updateLocale();
   },
   { immediate: true }
-)
+);
 </script>
 
 <template>
   <div class="position-fixed top-0 end-0 p-3 z-3">
     <select
+      v-model="selectedLocale"
       class="form-select"
       aria-label="Default select example"
-      v-model="selectedLocale"
       @change="updateLocale"
     >
-      <option value="de">Deutsch</option>
-      <option value="en">English</option>
+      <option value="de">
+        Deutsch
+      </option>
+      <option value="en">
+        English
+      </option>
     </select>
   </div>
 

@@ -1,23 +1,19 @@
-import './assets/main.min.css'
-
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
-
-import 'bootstrap/dist/js/bootstrap.min.js'
-import i18n from './i18n.js'
-
-import { config } from "@fortawesome/fontawesome-svg-core";
-config.autoAddCss = false;
+import './assets/main.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { createApp } from 'vue';
+import App from './App.vue';
+import i18n from './i18n.js';
+import router from './router';
 
-import { library } from "@fortawesome/fontawesome-svg-core"
-import { fas } from "@fortawesome/free-solid-svg-icons"
-import { fab } from "@fortawesome/free-brands-svg-icons"
-import { far } from "@fortawesome/free-regular-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
-
-library.add(fas, fab, far)
+config.autoAddCss = false;
+library.add(fas, fab, far);
 
 createApp(App)
   .use(i18n)
