@@ -7,7 +7,7 @@ export default [
   ...pluginVue.configs['flat/strongly-recommended'],
   ...pluginVue.configs['flat/recommended'],
   {
-    files: ['**/*.vue', '**/*.js'],
+    files: ['**/*.vue', '**/*.js', '**/*.mjs'],
     plugins: {
       import: pluginImport,
     },
