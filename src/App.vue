@@ -13,11 +13,11 @@ import ResumeView from '@/views/ResumeView.vue';
 
 useHead({
   meta: [
-    { name: 'og:title', content: 'Portfolio - Jan Lukas Dein' },
-    { name: 'og:type', content: 'website' },
-    { name: 'og:url', content: window.location.origin },
-    { name: 'og:image', content: `${window.location.origin }${meImage}` },
-    { name: 'og:description', content: 'This is the CV website of Jan Lukas Dein. If you want to know more about my experience, please check it out.' },
+    { property: 'og:title', content: 'Portfolio - Jan Lukas Dein' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: window.location.origin },
+    { property: 'og:image', content: `${window.location.origin }${meImage}` },
+    { property: 'og:description', content: 'This is the CV website of Jan Lukas Dein. If you want to know more about my experience, please check it out.' },
   ],
 });
 </script>
