@@ -7,6 +7,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { createHead } from '@unhead/vue';
 import { createApp } from 'vue';
 import App from './App.vue';
 import i18n from './i18n.js';
@@ -17,6 +18,7 @@ library.add(fas, fab, far);
 
 createApp(App)
   .use(i18n)
+  .use(createHead())
   .use(router)
   .component('font-awesome-icon', FontAwesomeIcon)
   .mount('#app');
