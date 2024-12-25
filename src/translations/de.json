@@ -48,7 +48,7 @@
     },
     "mvvm": {
       "title": "MVVM (Caliburn Micro)",
-      "text": "Als ich mir C# beigebracht habe, habe ich die meiste Zeit damit verbracht, Windows Forms-Anwendungen zu entwickeln. Da Windows Forms in Bezug auf die Skalierbarkeit der grafischen Benutzeroberfläche relativ eingeschränkt ist, habe ich mich verstärkt mit WPF auseinandergesetzt. Obwohl WPF auf den ersten Blick deutlich komplexer erscheint, habe ich die Herausforderung genossen und konnte mich schnell damit vertraut machen. Allerdings habe ich auch hier bald erkannt, dass die Arbeit mit Daten in Textfeldern und anderen Elementen zeitaufwendig sein kann, weshalb ich mich mit MVVM auseinandergesetzt habe. Als Framework habe ich Caliburn Micro verwendet, das sowohl für Anfänger geeignet als auch leistungsstark ist."
+      "text": "Als ich mir C# beigebracht habe, habe ich die meiste Zeit damit verbracht, Windows Forms-Anwendungen zu entwickeln. Da Windows Forms in Bezug auf die Skalierbarkeit der grafischen Benutzeroberfläche relativ eingeschränkt ist, habe ich mich verstärkt mit WPF auseinandergesetzt. Obwohl WPF auf den ersten Blick deutlich komplexer erscheint, habe ich die Herausforderung genossen und konnte mich schnell damit vertraut machen. Allerdings habe ich auch hier bald erkannt, dass die Arbeit mit Daten in Textfeldern und anderen Elementen zeitaufwendig sein kann, weshalb ich mich mit MVVM auseinandergesetzt habe. Als Framework habe ich Caliburn Micro verwendet, das sowohl leistungsstark als auch geeignet für Anfänger ist."
     },
     "server": {
       "title": "Server Management",
