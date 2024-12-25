@@ -6,10 +6,10 @@ import FunFactCard from '@/components/FunFactCard.vue';
 const { t } = useI18n();
 
 const funFacts = computed(() => [
-  {icon: ['fas', 'cat'], amount: 1000, text: t('fun-facts.cat-videos')},
-  {icon: ['far', 'eye'], amount: 220, text: t('fun-facts.series')},
-  {icon: ['fas', 'book'], amount: 230, text: t('fun-facts.manga')},
-  {icon: ['fas', 'desktop'], amount: 15, text: t('fun-facts.websites')},
+  { icon: ['fas', 'cat'], amount: 1000, text: t('fun-facts.cat-videos') },
+  { icon: ['far', 'eye'], amount: 220, text: t('fun-facts.series') },
+  { icon: ['fas', 'book'], amount: 230, text: t('fun-facts.manga') },
+  { icon: ['fas', 'desktop'], amount: 15, text: t('fun-facts.websites') },
 ]);
 </script>
 

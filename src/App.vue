@@ -11,9 +11,7 @@ import LanguageView from '@/views/LanguageView.vue';
 import ProjectsView from '@/views/ProjectsView.vue';
 import ResumeView from '@/views/ResumeView.vue';
 
-
 const { locale, availableLocales, fallbackLocale } = useI18n({ useScope: 'global' });
-
 const route = useRoute();
 const router = useRouter();
 const selectedLocale = ref(locale.value);

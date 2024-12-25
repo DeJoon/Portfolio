@@ -1,5 +1,5 @@
 <script setup>
-import {onMounted, ref, useSlots} from 'vue';
+import { onMounted, ref, useSlots } from 'vue';
 
 defineProps({
   title: {

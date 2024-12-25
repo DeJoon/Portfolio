@@ -5,7 +5,6 @@ import CardRow from '@/components/CardBox/CardRow.vue';
 import CardBox from '@/components/CardBox.vue';
 import SectionHeader from '@/components/SectionHeader.vue';
 
-
 const { t, d } = useI18n();
 
 const calculateAge = () => {

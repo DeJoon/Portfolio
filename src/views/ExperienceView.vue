@@ -1,5 +1,5 @@
 <script setup>
-import {ref} from 'vue';
+import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import CollapseBox from '@/components/CollapseBox.vue';
 import SectionHeader from '@/components/SectionHeader.vue';
@@ -8,11 +8,11 @@ import SkillRow from '@/components/SkillRow.vue';
 const { t } = useI18n();
 
 const skills = ref([
-  {title: 'PHP', percentage: '85'},
-  {title: 'HTML/CSS', percentage: '80'},
-  {title: 'C#', percentage: '60'},
-  {title: 'JavaScript', percentage: '50'},
-  {title: 'Vue', percentage: '50'},
+  { title: 'PHP', percentage: '85' },
+  { title: 'HTML/CSS', percentage: '80' },
+  { title: 'C#', percentage: '60' },
+  { title: 'JavaScript', percentage: '50' },
+  { title: 'Vue', percentage: '50' },
 ]);
 </script>
 

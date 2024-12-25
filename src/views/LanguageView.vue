@@ -6,9 +6,9 @@ import SectionHeader from '@/components/SectionHeader.vue';
 const { t } = useI18n();
 
 const languages = computed(() => [
-  {language: t('language.german.name'), level: t('language.german.level')},
-  {language: t('language.english.name'), level: t('language.english.level')},
-  {language: t('language.japanese.name'), level: t('language.japanese.level')},
+  { language: t('language.german.name'), level: t('language.german.level') },
+  { language: t('language.english.name'), level: t('language.english.level') },
+  { language: t('language.japanese.name'), level: t('language.japanese.level') },
 ]);
 </script>
 

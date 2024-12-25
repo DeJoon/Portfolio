@@ -26,6 +26,8 @@ export default [
         },
       ],
 
+      'object-curly-spacing': ['error', 'always'],
+
       // Enforce single quotes in import statements
       '@/quote-props': ['error', 'consistent-as-needed'],
 
