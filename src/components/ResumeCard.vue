@@ -1,43 +1,53 @@
 <script setup>
 defineProps({
   from: {
-    type: String
+    type: String,
+    default: null,
   },
   until: {
     type: String,
-    required: true
+    required: true,
   },
   name: {
     type: String,
-    required: true
+    required: true,
   },
   location: {
     type: String,
-    required: true
-  }
-})
+    required: true,
+  },
+});
 </script>
 
 <template>
   <div class="container mt-3">
     <div class="row align-items-center text-center">
-      <div class="col-3 line"></div>
-      <div class="col-6">{{ until }}</div>
-      <div class="col-3 line"></div>
+      <div class="col-3 line" />
+      <div class="col-6">
+        {{ until }}
+      </div>
+      <div class="col-3 line" />
     </div>
   </div>
   <div class="resume-card mt-3">
     <h3>{{ name }}</h3>
-    <div class="header-subtitle mb-2">{{location}}</div>
+    <div class="header-subtitle mb-2">
+      {{ location }}
+    </div>
     <div class="text-start">
       <slot />
     </div>
   </div>
-  <div v-if="from" class="container mt-3">
+  <div
+    v-if="from"
+    class="container mt-3"
+  >
     <div class="row align-items-center text-center">
-      <div class="col-3 line"></div>
-      <div class="col-6">{{ from }}</div>
-      <div class="col-3 line"></div>
+      <div class="col-3 line" />
+      <div class="col-6">
+        {{ from }}
+      </div>
+      <div class="col-3 line" />
     </div>
   </div>
 </template>

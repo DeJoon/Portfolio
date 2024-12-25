@@ -1,25 +1,31 @@
 <script setup>
-import SectionHeader from "@/components/SectionHeader.vue";
-import SkillRow from "@/components/SkillRow.vue";
-import CollapseBox from "@/components/CollapseBox.vue";
-import {ref} from "vue";
+import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
+import CollapseBox from '@/components/CollapseBox.vue';
+import SectionHeader from '@/components/SectionHeader.vue';
+import SkillRow from '@/components/SkillRow.vue';
+
 const { t } = useI18n();
 
 const skills = ref([
-  {title: 'PHP', percentage: '85'},
-  {title: 'HTML/CSS', percentage: '80'},
-  {title: 'C#', percentage: '60'},
-  {title: 'JavaScript', percentage: '50'},
-  {title: 'Vue', percentage: '50'},
-])
+  { title: 'PHP', percentage: '85' },
+  { title: 'HTML/CSS', percentage: '80' },
+  { title: 'C#', percentage: '60' },
+  { title: 'JavaScript', percentage: '50' },
+  { title: 'Vue', percentage: '50' },
+]);
 </script>
 
 <template>
   <div class="p-4">
     <div class="skills mt-5">
       <SectionHeader title="Skills" />
-      <SkillRow v-for="(item, index) in skills" :key="index" :title="item.title" :percentage="item.percentage" />
+      <SkillRow
+        v-for="(item, index) in skills"
+        :key="index"
+        :title="item.title"
+        :percentage="item.percentage"
+      />
     </div>
 
     <div class="experience mt-5">
@@ -27,75 +33,111 @@ const skills = ref([
 
       <div class="content">
         <CollapseBox :title="t('experience.apprenticeship.title')">
-          <template v-slot:icons>
-            <font-awesome-icon :icon="['fas', 'graduation-cap']" size="3x" />
+          <template #icons>
+            <font-awesome-icon
+              :icon="['fas', 'graduation-cap']"
+              size="3x"
+            />
           </template>
 
-          {{t('experience.apprenticeship.text')}}
+          {{ t('experience.apprenticeship.text') }}
         </CollapseBox>
 
         <CollapseBox :title="t('experience.php.title')">
-          <template v-slot:icons>
-            <font-awesome-icon :icon="['fab', 'php']" size="3x" />
-            <font-awesome-icon :icon="['fab', 'symfony']" size="3x" />
+          <template #icons>
+            <font-awesome-icon
+              :icon="['fab', 'php']"
+              size="3x"
+            />
+            <font-awesome-icon
+              :icon="['fab', 'symfony']"
+              size="3x"
+            />
           </template>
 
-          {{t('experience.php.text')}}
+          {{ t('experience.php.text') }}
         </CollapseBox>
 
         <CollapseBox :title="t('experience.vcs.title')">
-          <template v-slot:icons>
-            <font-awesome-icon :icon="['fab', 'git-alt']" size="3x" />
-            <font-awesome-icon :icon="['fab', 'github']" size="3x" />
-            <font-awesome-icon :icon="['fab', 'gitlab']" size="3x" />
+          <template #icons>
+            <font-awesome-icon
+              :icon="['fab', 'git-alt']"
+              size="3x"
+            />
+            <font-awesome-icon
+              :icon="['fab', 'github']"
+              size="3x"
+            />
+            <font-awesome-icon
+              :icon="['fab', 'gitlab']"
+              size="3x"
+            />
           </template>
 
-          {{t('experience.vcs.text')}}
+          {{ t('experience.vcs.text') }}
         </CollapseBox>
 
         <CollapseBox :title="t('experience.tests.title')">
-          <template v-slot:icons>
-            <font-awesome-icon :icon="['fas', 'microscope']" size="3x" />
+          <template #icons>
+            <font-awesome-icon
+              :icon="['fas', 'microscope']"
+              size="3x"
+            />
           </template>
 
-          {{t('experience.tests.text1')}}
-          <br /><br />
-          {{t('experience.tests.text2')}}
+          {{ t('experience.tests.text1') }}
+          <br><br>
+          {{ t('experience.tests.text2') }}
         </CollapseBox>
 
         <CollapseBox :title="t('experience.cicd.title')">
-          <template v-slot:icons>
-            <font-awesome-icon :icon="['fab', 'jenkins']" size="3x" />
+          <template #icons>
+            <font-awesome-icon
+              :icon="['fab', 'jenkins']"
+              size="3x"
+            />
           </template>
 
-          {{t('experience.cicd.text')}}
+          {{ t('experience.cicd.text') }}
         </CollapseBox>
 
         <CollapseBox :title="t('experience.c-sharp.title')">
-          {{t('experience.c-sharp.text')}}
+          {{ t('experience.c-sharp.text') }}
         </CollapseBox>
 
         <CollapseBox :title="t('experience.mvvm.title')">
-          {{t('experience.mvvm.text')}}
+          {{ t('experience.mvvm.text') }}
         </CollapseBox>
         
         <CollapseBox :title="t('experience.server.title')">
-          <template v-slot:icons>
-            <font-awesome-icon :icon="['fab', 'cloudflare']" size="3x" />
-            <font-awesome-icon :icon="['fas', 'server']" size="3x" />
-            <font-awesome-icon :icon="['fab', 'ubuntu']" size="3x" />
-            <font-awesome-icon :icon="['fab', 'docker']" size="3x" />
+          <template #icons>
+            <font-awesome-icon
+              :icon="['fab', 'cloudflare']"
+              size="3x"
+            />
+            <font-awesome-icon
+              :icon="['fas', 'server']"
+              size="3x"
+            />
+            <font-awesome-icon
+              :icon="['fab', 'ubuntu']"
+              size="3x"
+            />
+            <font-awesome-icon
+              :icon="['fab', 'docker']"
+              size="3x"
+            />
           </template>
 
-          {{t('experience.server.text1')}}
-          <br /><br />
-          {{t('experience.server.text2')}}
-          <br /><br />
-          {{t('experience.server.text3')}}
-          <br /><br />
-          {{t('experience.server.text4')}}
-          <br /><br />
-          {{t('experience.server.text5')}}
+          {{ t('experience.server.text1') }}
+          <br><br>
+          {{ t('experience.server.text2') }}
+          <br><br>
+          {{ t('experience.server.text3') }}
+          <br><br>
+          {{ t('experience.server.text4') }}
+          <br><br>
+          {{ t('experience.server.text5') }}
         </CollapseBox>
       </div>
     </div>

@@ -1,31 +1,45 @@
 <script setup>
-import { computed } from "vue";
+import { computed } from 'vue';
 
 const props = defineProps({
   percentage: {
     type: String,
-    required: true
+    required: true,
   },
   title: {
     type: String,
-    required: true
+    required: true,
   },
-})
+});
 
 const popoverOffset = computed(() => {
-  return `left: ${props.percentage - 5}%;`
-})
+  return `left: ${props.percentage - 5}%;`;
+});
 const width = computed(() => {
-  return `width: ${props.percentage}%;`
-})
+  return `width: ${props.percentage}%;`;
+});
 </script>
 
 <template>
   <div class="skill-row">
-    <div class="title">{{ title }}</div>
-    <div class="percentage-popover" :style="popoverOffset">{{ percentage }}%</div>
+    <div class="title">
+      {{ title }}
+    </div>
+    <div
+      class="percentage-popover"
+      :style="popoverOffset"
+    >
+      {{ percentage }}%
+    </div>
     <div class="progress">
-      <div class="progress-bar bg-black" role="progressbar" :style="width" :aria-valuenow="width" aria-valuemin="0" aria-valuemax="100"></div>
+      <div
+        class="progress-bar bg-black"
+        role="progressbar"
+        :style="width"
+        :aria-valuenow="width"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      />
     </div>
   </div>
 </template>

@@ -1,17 +1,18 @@
 <script setup>
-import CardBox from "@/components/CardBox.vue";
-import CardRow from "@/components/CardBox/CardRow.vue";
-import SectionHeader from "@/components/SectionHeader.vue";
-import { computed } from 'vue'
+import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
+import CardRow from '@/components/CardBox/CardRow.vue';
+import CardBox from '@/components/CardBox.vue';
+import SectionHeader from '@/components/SectionHeader.vue';
+
 const { t, d } = useI18n();
 
 const calculateAge = () => {
-  const birthdate = new Date('10.04.2001')
-  const difference = new Date(Date.now() - birthdate.getTime())
+  const birthdate = new Date('10.04.2001');
+  const difference = new Date(Date.now() - birthdate.getTime());
 
-  return Math.abs(difference.getUTCFullYear() - 1970).toString()
-}
+  return Math.abs(difference.getUTCFullYear() - 1970).toString();
+};
 
 const profile = computed(() => [
   { title: t('misc.name'), value: 'Jan Lukas Dein' },
@@ -26,15 +27,24 @@ const profile = computed(() => [
   <div class="p-4">
     <div class="about-me text-center">
       <SectionHeader :title="t('aboutMe.title')" />
-      <img src="../assets/img/me.jpg" alt="Me" class="profile-picture" />
+      <img
+        src="../assets/img/me.jpg"
+        alt="Me"
+        class="profile-picture"
+      >
       <div class="mt-3">
-        {{t('aboutMe.text')}}
+        {{ t('aboutMe.text') }}
       </div>
     </div>
 
     <div class="profile mt-5">
       <CardBox>
-        <CardRow v-for="(item, index) in profile" :key="index" :title="item.title" :text="item.value"/>
+        <CardRow
+          v-for="(item, index) in profile"
+          :key="index"
+          :title="item.title"
+          :text="item.value"
+        />
       </CardBox>
     </div>
   </div>

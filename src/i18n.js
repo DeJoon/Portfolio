@@ -3,21 +3,21 @@ import de from './translations/de.json';
 import en from './translations/en.json';
 
 const dateTimeFormats = {
-  'de': {
+  de: {
     long: {
       month: 'long',
       day: '2-digit',
       year: 'numeric',
-    }
+    },
   },
-  'en': {
+  en: {
     long: {
       month: 'long',
       day: '2-digit',
       year: 'numeric',
-    }
+    },
   },
-}
+};
 
 const i18n = createI18n({
   legacy: false,

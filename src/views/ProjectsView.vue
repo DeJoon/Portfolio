@@ -1,7 +1,8 @@
 <script setup>
-import SectionHeader from "@/components/SectionHeader.vue";
-import CollapseBox from "@/components/CollapseBox.vue";
 import { useI18n } from 'vue-i18n';
+import CollapseBox from '@/components/CollapseBox.vue';
+import SectionHeader from '@/components/SectionHeader.vue';
+
 const { t } = useI18n();
 </script>
 
@@ -12,37 +13,52 @@ const { t } = useI18n();
 
       <div class="content">
         <CollapseBox :title="t('project.fraunhofer.title')">
-          <template v-slot:icons>
-            <font-awesome-icon :icon="['fas', 'chart-line']" size="3x" />
+          <template #icons>
+            <font-awesome-icon
+              :icon="['fas', 'chart-line']"
+              size="3x"
+            />
           </template>
 
-          {{t('project.fraunhofer.text')}}
+          {{ t('project.fraunhofer.text') }}
         </CollapseBox>
 
         <CollapseBox :title="t('project.hit-robot.title')">
-          <template v-slot:icons>
-            <font-awesome-icon :icon="['fas', 'robot']" size="3x" />
-            <font-awesome-icon :icon="['fab', 'raspberry-pi']" size="3x" />
-            <font-awesome-icon :icon="['fab', 'python']" size="3x" />
+          <template #icons>
+            <font-awesome-icon
+              :icon="['fas', 'robot']"
+              size="3x"
+            />
+            <font-awesome-icon
+              :icon="['fab', 'raspberry-pi']"
+              size="3x"
+            />
+            <font-awesome-icon
+              :icon="['fab', 'python']"
+              size="3x"
+            />
           </template>
 
-          {{t('project.hit-robot.text1')}}
-          <br /><br />
-          {{t('project.hit-robot.text2')}}
-          <br /><br />
-          {{t('project.hit-robot.text3')}}
+          {{ t('project.hit-robot.text1') }}
+          <br><br>
+          {{ t('project.hit-robot.text2') }}
+          <br><br>
+          {{ t('project.hit-robot.text3') }}
         </CollapseBox>
 
         <CollapseBox :title="t('project.aop.title')">
-          {{t('project.aop.text')}}
+          {{ t('project.aop.text') }}
         </CollapseBox>
 
         <CollapseBox :title="t('project.spinning-mill.title')">
-          <template v-slot:icons>
-            <font-awesome-icon :icon="['fas', 'industry']" size="3x" />
+          <template #icons>
+            <font-awesome-icon
+              :icon="['fas', 'industry']"
+              size="3x"
+            />
           </template>
 
-          {{t('project.spinning-mill.text')}}
+          {{ t('project.spinning-mill.text') }}
         </CollapseBox>
       </div>
     </div>

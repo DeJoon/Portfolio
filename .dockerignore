@@ -1,8 +1,7 @@
 README.md
 Dockerfile
 docker-compose.yaml
-.prettierrc.json
 .gitignore
-.eslintrc.cjs
+eslint.config.js
 .dockerignore
 node_modules
