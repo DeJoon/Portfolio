@@ -15,10 +15,22 @@ import router from './router';
 
 config.autoAddCss = false;
 library.add(fas, fab, far);
+const head = createHead();
+head.push({
+  title: 'Home - My Vue App',
+  meta: [
+    { name: 'description', content: 'Welcome to my Vue 3 SSR app.' },
+    { property: 'og:title', content: 'Home - My Vue App' },
+    { property: 'og:description', content: 'Welcome to my Vue 3 SSR app.' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://example.com/' },
+    { property: 'og:image', content: 'https://example.com/og-image.jpg' },
+  ],
+});
 
 createApp(App)
   .use(i18n)
-  .use(createHead())
+  .use(head)
   .use(router)
   .component('font-awesome-icon', FontAwesomeIcon)
   .mount('#app');
