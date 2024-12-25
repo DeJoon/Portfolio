@@ -1,12 +1,14 @@
 <script setup>
 import FunFactCard from "@/components/FunFactCard.vue";
-import {ref} from "vue";
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 
-const funFacts = ref([
-  {icon: ['fas', 'cat'], amount: 1000, text: 'Katzen Videos geschaut'},
-  {icon: ['far', 'eye'], amount: 220, text: 'Serien abgeschlossen'},
-  {icon: ['fas', 'book'], amount: 230, text: 'Manga im Besitz'},
-  {icon: ['fas', 'desktop'], amount: 15, text: 'Gehostete Webseiten'},
+const funFacts = computed(() => [
+  {icon: ['fas', 'cat'], amount: 1000, text: t('fun-facts.cat-videos')},
+  {icon: ['far', 'eye'], amount: 220, text: t('fun-facts.series')},
+  {icon: ['fas', 'book'], amount: 230, text: t('fun-facts.manga')},
+  {icon: ['fas', 'desktop'], amount: 15, text: t('fun-facts.websites')},
 ])
 </script>
 

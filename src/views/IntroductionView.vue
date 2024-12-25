@@ -1,14 +1,15 @@
 <script setup>
-
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 </script>
 
 <template>
   <div class="introduction px-3 text-white d-flex justify-content-center align-items-center">
     <div class="text text-center">
       <h2>cout&lt;&lt;"Hello World";</h2>
-      <h1 class="my-4 lh-sm">Mein Name ist Jan Lukas Dein</h1>
+      <h1 class="my-4 lh-sm">{{t('introduction.title')}}</h1>
       <div>
-        und mit dieser Ausgabe wurde mein Interesse an der Programmierung geweckt
+        {{t('introduction.text')}}
       </div>
     </div>
   </div>

@@ -1,0 +1,125 @@
+{
+  "misc": {
+    "name": "Name",
+    "birthday": "Birthday",
+    "age": "Age",
+    "sex": {
+      "gender": "Gender",
+      "male": "Male"
+    },
+    "mail": "Email",
+    "language": "Language | Languages",
+    "level": "Level"
+  },
+  "introduction": {
+    "title": "My name is Jan Lukas Dein",
+    "text": "and with this output, my interest in programming was sparked"
+  },
+  "aboutMe": {
+    "title": "About me",
+    "text": "I am Jan, a trained IT specialist in application development. I enjoy working with various technologies and frameworks. My greatest strength lies in backend development, but I can also design the frontend if required. Working in a team is natural for me, so I enjoy engaging with my team."
+  },
+  "experience": {
+    "title": "Experience",
+    "apprenticeship": {
+      "title": "Apprenticeship",
+      "text": "After graduating from technical high school, I directly started my training as an IT specialist in application development. During this time, I worked in a company that developed an e-commerce platform for tires and other car parts, thus operating in web development. I came into contact with various programming languages and technologies and successfully completed my training in July 2023 after three years."
+    },
+    "php": {
+      "title": "PHP / Symfony",
+      "text": "During my apprenticeship as an application developer, I worked in a company engaged in web development. During this time, I primarily used PHP for the backend, with the Symfony framework playing a central role. Through Symfony, I learned how to design endpoints, process inputs and outputs, and document them. Over the years, I created numerous endpoints and worked on various projects, including a CLI project used for commands or RabbitMQ consumers. For implementing mockups, I used the template languages Smarty and Twig. To ease stylesheet design, I often used SCSS. Additionally, I am familiar with the CSS framework Bootstrap."
+    },
+    "vcs": {
+      "title": "Version Control",
+      "text": "For a developer, working with version control should be a given, especially in a professional environment. Git can undoubtedly be considered the leading version control system. I am familiar with the most common Git techniques and have manually created Git releases, performed back-merges, and occasionally used cherry-pick. For server-side version control, I used GitLab or GitHub. At work, I primarily used GitLab, while I exclusively use GitHub for personal projects."
+    },
+    "tests": {
+      "title": "Tests",
+      "text1": "For testing my code, I wrote both unit tests and Behat tests. I used PHPUnit for creating unit tests to extensively test individual classes. If a class made changes to the database or retrieved data from it, I ensured that the SQL queries remained consistent. These tests were particularly important in packages or bundles, as changes in the code could lead to breaking changes. In such cases, it was necessary to release a new version to maintain the stability of existing code.",
+      "text2": "Behat tests were additionally used for API projects to ensure that the endpoints functioned as specified. This was especially important for older API versions to ensure that implementations with older versions were not impaired."
+    },
+    "cicd": {
+      "title": "CI/CD (Jenkins)",
+      "text": "In software development, quality assurance should hold a high priority. Everyone knows the feeling when a program or website does not work as expected. Relying solely on tests is usually not enough. If no tests are conducted, errors cannot be detected. To ensure that an unstable codebase is not merged, I used Jenkins during my apprenticeship. Although configuring Jenkins was not my main task, I used it daily to check the stability of my code. Additionally, I used Jenkins to deploy code to web servers during releases. At our company, GitLab was configured so that merging into main/master/develop branches was only possible if Jenkins had previously ensured quality."
+    },
+    "c-sharp": {
+      "title": "C#",
+      "text": "My journey with C# began during my technical high school at BBS1 Technik Kaiserslautern, where I specialized in application development. Here, I quickly discovered my affinity for the programming language and Microsoft's development environment. During an internship at a company where I had to use C# for a project, my interest in this language was further strengthened. This motivated me to delve deeper into C# in my spare time. During this time, I explored various extensions, such as LINQ or SQLKata, to use them as query builders for my SQLite database."
+    },
+    "mvvm": {
+      "title": "MVVM (Caliburn Micro)",
+      "text": "When I taught myself C#, I spent most of my time developing Windows Forms applications. Since Windows Forms is relatively limited in terms of graphical user interface scalability, I delved deeper into WPF. Although WPF initially seemed significantly more complex, I enjoyed the challenge and quickly became familiar with it. However, I soon realized that working with data in text fields and other elements could be time-consuming, so I explored MVVM. I used Caliburn Micro as a framework, which is suitable for beginners and powerful."
+    },
+    "server": {
+      "title": "Server Management",
+      "text1": "A friend told me a lot about his home server. It sounded so interesting to me that I decided to get a server myself. The operating system on my server is Proxmox. The advantage of Proxmox is that it is entirely VM-based. It provides a platform for creating and managing VMs, including monitoring and backup systems. I chose Proxmox based on a friend's recommendation.",
+      "text2": "Currently, my server runs several VMs that serve different purposes. To manage the VMs' storage, I use TrueNAS Scale, which also runs in a VM. TrueNAS handles the sharing of so-called 'shares,' each with its own permissions. The VMs under TrueNAS mount these shares and can use the storage space managed by TrueNAS as if it were part of the system.",
+      "text3": "All VMs, except for the TrueNAS VM, run Ubuntu Server. To host various services and websites, I frequently use Docker/Docker Compose. I'm a big fan of Docker, as it makes hosting websites on different systems very easy without having to adjust the systems. You simply configure Docker or write your Dockerfile, run it, and everything works as it should. Even the website you are currently visiting runs in a Docker container with Vue.js as its base. This website is privately hosted by me. If you're interested in the code for this website, feel free to visit my GitHub page, which you can find at the bottom of the website.",
+      "text4": "Of course, security is a critical aspect of the internet. A good firewall is essential when hosting websites. At home, I use the built-in firewall of my FRITZ!Box. Additionally, I only make websites/services externally accessible that truly need to be. Furthermore, I keep all my websites and operating systems up to date to close as many security gaps as possible.",
+      "text5": "I currently host about 15 websites and services on my server, which I keep regularly updated."
+    }
+  },
+  "project": {
+    "title": "Projects / Internships",
+    "fraunhofer": {
+      "title": "Fraunhofer ITWM",
+      "text": "As part of my technical high school studies, I was given the opportunity to complete my final project at Fraunhofer ITWM in Kaiserslautern due to my performance. I expanded an existing software program for evaluating various automobile data, which could determine the durability and resilience of car parts using graphs. My task was to replace existing pointers in the C++ program with 'smart pointers.' The advantage of these pointers is that they automatically free memory when no longer needed. Additionally, I extended existing windows with a few additional input fields using Qt."
+    },
+    "hit-robot": {
+      "title": "BBS1 HIT-Robot-AG",
+      "text1": "The HIT-Robot-AG was a voluntary working group during my technical high school studies. This group focused on independently building a robot that could be controlled using a program. The robot was then supposed to follow a black line on a white background.",
+      "text2": "Two simple motors with wheels, a power bank, several sensors with resistors, and a Raspberry Pi were used. Python was the programming language of choice.",
+      "text3": "First, the robot had to be built. The motors and sensors were connected in series with resistors to adjust the voltage. Both the sensors and motors were then connected to the Raspberry Pi's GPIO pins. The first program instructed the robot to move on command. When a key was pressed on the keyboard, the robot was supposed to move accordingly. After implementing this functionality, the program was extended to read sensor data and control the motors to follow the line."
+    },
+    "aop": {
+      "title": "AoP UG",
+      "text": "During my six-week internship in technical high school, I worked for a sole proprietorship. My task was to develop a desktop application for warranty management. The application was designed to store items with information about where they were purchased, when the purchase occurred, and how long the warranty lasted. All this information was displayed in a DataGrid, which read the data from an SQL Server database in the background. The entire application was developed using C# and designed with Windows Forms. I had complete freedom in designing the program."
+    },
+    "spinning-mill": {
+      "title": "Spinning Mill Lampertsmühle GmbH",
+      "text": "During my school years, I completed an internship at the Spinning Mill Lampertsmühle. During this time, I performed various tasks as a locksmith and set-up technician for the spinning machines on the company premises. My duties included checking the yarn quality and adjusting the machines as needed. Additionally, I prepared the machines for new yarns, as they had to be set up according to customer requirements. We received clear specifications from the customer, which I followed precisely. Depending on the yarn thickness, the required gears were installed."
+    }
+  },
+  "cv": {
+    "title": "Resume",
+    "alzura": {
+      "location": "Kaiserslautern, Germany",
+      "name": "ALZURA AG",
+      "until": "Now",
+      "text": "In this company, I completed my three-year apprenticeship as an IT specialist in application development. I am currently employed full-time as a full-stack developer in web development."
+    },
+    "bbs1": {
+      "location": "BBS1-Technik Kaiserslautern, Germany",
+      "name": "Higher Vocational School of Information Technology",
+      "until": "August 2020",
+      "text": "In August 2018, I started my two-year technical high school program in Information Technology, focusing on application development in the second year."
+    },
+    "education": {
+      "location": "Kaiserslautern, Germany",
+      "name": "Basic Education",
+      "until": "August 2018",
+      "from": "August 2007",
+      "text": "I completed my basic education in August 2018, finishing the 10th grade."
+    }
+  },
+  "language": {
+    "german": {
+      "name": "German",
+      "level": "Native speaker"
+    },
+    "english": {
+      "name": "English",
+      "level": "C1"
+    },
+    "japanese": {
+      "name": "Japanese",
+      "level": "Beginner"
+    }
+  },
+  "fun-facts": {
+    "cat-videos": "Watched cat videos",
+    "series": "Series completed",
+    "manga": "Manga owned",
+    "websites": "Hosted websites"
+  }
+}

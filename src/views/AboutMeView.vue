@@ -2,7 +2,9 @@
 import CardBox from "@/components/CardBox.vue";
 import CardRow from "@/components/CardBox/CardRow.vue";
 import SectionHeader from "@/components/SectionHeader.vue";
-import {ref} from "vue";
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n';
+const { t, d } = useI18n();
 
 const calculateAge = () => {
   const birthdate = new Date('10.04.2001')
@@ -11,26 +13,22 @@ const calculateAge = () => {
   return Math.abs(difference.getUTCFullYear() - 1970).toString()
 }
 
-const profile = ref([
-  {title: 'Name:', value: 'Jan Lukas Dein'},
-  {title: 'Geburtstag:', value: '04. Oktober 2001'},
-  {title: 'Alter:', value: calculateAge()},
-  {title: 'Geschlecht:', value: 'Männlich'},
-  {title: 'E-Mail:', value: 'jandein04+business@gmail.com'},
-])
+const profile = computed(() => [
+  { title: t('misc.name'), value: 'Jan Lukas Dein' },
+  { title: t('misc.birthday'), value: d(new Date(2001, 9, 4), 'long') },
+  { title: t('misc.age'), value: calculateAge() },
+  { title: t('misc.sex.gender'), value: t('misc.sex.male') },
+  { title: t('misc.mail'), value: 'jandein04+business@gmail.com' },
+]);
 </script>
 
 <template>
   <div class="p-4">
     <div class="about-me text-center">
-      <SectionHeader title="Über mich" />
-      <img src="../assets/img/me.jpg" alt="Ich" class="profile-picture" />
+      <SectionHeader :title="t('aboutMe.title')" />
+      <img src="../assets/img/me.jpg" alt="Me" class="profile-picture" />
       <div class="mt-3">
-        Ich bin Jan und ein gelernter Fachinformatiker im Bereich der Anwendungsentwicklung.
-        Dabei arbeite ich sehr gerne mit verschiedenen Technologien und Frameworks.
-        Meine größte Stärke liegt in der Backend-Entwicklung, aber ich kann auch das Frontend gestalten,
-        wenn erforderlich.
-        Im Team zu arbeiten ist für mich selbstverständlich, daher engagiere ich mich gerne im Team.
+        {{t('aboutMe.text')}}
       </div>
     </div>
 

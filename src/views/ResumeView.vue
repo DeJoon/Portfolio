@@ -1,24 +1,24 @@
 <script setup>
 import SectionHeader from "@/components/SectionHeader.vue";
 import ResumeCard from "@/components/ResumeCard.vue";
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 </script>
 
 <template>
 <div class="p-4">
-  <SectionHeader title="Lebenslauf" />
+  <SectionHeader :title="t('cv.title')" />
 
-  <ResumeCard location="Kaiserslautern Deutschland" name="ALZURA AG" until="Jetzt">
-    In diesem Unternehmen habe ich meine Ausbildung als Fachinformatiker Anwendungsentwicklung für 3 Jahre gemacht.
-    Aktuell werde ich Vollzeit als Full-Stack Developer in der Webentwicklung eingesetzt.
+  <ResumeCard :location="t('cv.alzura.location')" :name="t('cv.alzura.name')" :until="t('cv.alzura.until')">
+    {{t('cv.alzura.text')}}
   </ResumeCard>
 
-  <ResumeCard location="BBS1-Technik Kaiserslautern Deutschland" name="Höhere Berufsfachschule Informationstechnik" until="August 2020">
-    Im August 2018 habe ich mein zweijähriges Fachabitur im Bereich Informationstechnik begonnen und im zweiten
-    Jahr den Schwerpunkt auf die Anwendungsentwicklung gelegt.
+  <ResumeCard :location="t('cv.bbs1.location')" :name="t('cv.bbs1.name')" :until="t('cv.bbs1.until')">
+    {{t('cv.bbs1.text')}}
   </ResumeCard>
 
-  <ResumeCard location="Kaiserslautern Deutschland" name="Schulische Grundbildung" until="August 2018" from="August 2007">
-    Meine Schulische Grundbildung habe ich im August 2018 mit der 10ten Klasse abgeschlossen.
+  <ResumeCard :location="t('cv.education.location')" :name="t('cv.education.name')" :until="t('cv.education.until')" :from="t('cv.education.from')">
+    {{t('cv.bbs1.text')}}
   </ResumeCard>
 </div>
 </template>

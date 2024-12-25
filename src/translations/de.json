@@ -1,0 +1,125 @@
+{
+  "misc": {
+    "name": "Name",
+    "birthday": "Geburtstag",
+    "age": "Alter",
+    "sex": {
+      "gender": "Geschlecht",
+      "male": "Männlich"
+    },
+    "mail": "E-Mail",
+    "language": "Sprache | Sprachen",
+    "level": "Niveau"
+  },
+  "introduction": {
+    "title": "Mein Name ist Jan Lukas Dein",
+    "text": "und mit dieser Ausgabe wurde mein Interesse an der Programmierung geweckt"
+  },
+  "aboutMe": {
+    "title": "Über mich",
+    "text": "Ich bin Jan und ein gelernter Fachinformatiker im Bereich der Anwendungsentwicklung. Dabei arbeite ich sehr gerne mit verschiedenen Technologien und Frameworks. Meine größte Stärke liegt in der Backend-Entwicklung, aber ich kann auch das Frontend gestalten, wenn erforderlich. Im Team zu arbeiten ist für mich selbstverständlich, daher engagiere ich mich gerne im Team."
+  },
+  "experience": {
+    "title": "Erfahrung",
+    "apprenticeship": {
+      "title": "Ausbildung",
+      "text": "Nach dem Abschluss meines Fachabiturs habe ich direkt meine Ausbildung als Fachinformatiker in der Anwendungsentwicklung begonnen. Während dieser Zeit arbeitete ich in einem Unternehmen, das eine E-Commerce-Plattform für Reifen und andere Autoteile entwickelte und somit im Bereich Webentwicklung tätig war. Dabei kam ich mit verschiedenen Programmiersprachen und Technologien in Kontakt und konnte meine Ausbildung erfolgreich abschließen. Diese endete im Juli 2023, nach einer Dauer von drei Jahren."
+    },
+    "php": {
+      "title": "PHP / Symfony",
+      "text": "Während meiner Ausbildung als Anwendungsentwickler habe ich in einem Unternehmen gearbeitet, das im Bereich Webentwicklung tätig war. In dieser Zeit haben ich hauptsächlich PHP für das Backend eingesetzt, wobei das Symfony Framework eine zentrale Rolle spielte. Durch Symfony habe ich gelernt, wie man Endpunkte gestaltet, Eingaben und Ausgaben verarbeitet und diese dokumentiert. Im Laufe der Jahre habe ich zahlreiche Endpunkte erstellt und an verschiedenen Projekten mitgearbeitet. Darunter befand sich auch ein CLI-Projekt, das für Befehle oder RabbitMQ Consumer verwendet wurde. Für das Umsetzen von Mockups verwendeten ich die Templatesprachen Smarty und Twig. Um die Gestaltung von Stylesheets zu erleichtern, griffen ich oft auf SCSS zurück. Außerdem kenne ich mich mit dem CSS-Framework Bootstrap aus."
+    },
+    "vcs": {
+      "title": "Versionsverwaltung",
+      "text": "Für einen Entwickler sollte es selbstverständlich sein, mit einer Versionskontrolle zu arbeiten, insbesondere in einer professionellen Umgebung. Git kann zweifellos als die führende Versionsverwaltung angesehen werden. Ich bin mit den gängigsten Git-Techniken vertraut und habe bereits manuell Git-Releases erstellt, Back-Merges durchgeführt und auch gelegentlich Cherry-Pick angewendet. Für die Versionsverwaltung auf dem Server habe ich entweder GitLab oder GitHub verwendet. Bei meiner Arbeit habe ich hauptsächlich GitLab genutzt, während ich privat ausschließlich GitHub verwende."
+    },
+    "tests": {
+      "title": "Tests",
+      "text1": "Für das Testen meines Codes habe ich sowohl Unit Tests als auch Behat Tests geschrieben. Zur Erstellung der Unit Tests habe ich PHPUnit verwendet, um einzelne Klassen ausgiebig zu testen. Wenn eine Klasse Änderungen an der Datenbank vornahm oder Daten daraus abrief, habe ich sichergestellt, dass die SQL-Abfragen immer gleich blieben. Diese Tests waren besonders in Packages oder Bundles von großer Bedeutung, da Änderungen im Code zu Breaking Changes führen konnten. In solchen Fällen war es notwendig, eine neue Version zu veröffentlichen, um die Stabilität des bestehenden Codes nicht zu gefährden.",
+      "text2": "Behat Tests wurden zusätzlich für die API-Projekte verwendet, um sicherzustellen, dass die Endpunkte gemäß bestimmten Vorgaben funktionierten. Dies war insbesondere wichtig für ältere API-Versionen, um sicherzustellen, dass Implementierungen mit älteren Versionen nicht beeinträchtigt wurden."
+    },
+    "cicd": {
+      "title": "CI/CD (Jenkins)",
+      "text": "Bei der Entwicklung von Software sollte die Qualitätssicherung einen hohen Stellenwert haben. Jeder kennt das Gefühl, wenn ein Programm oder eine Webseite nicht so funktioniert, wie sie soll. Allein auf Tests zu vertrauen, reicht in der Regel nicht aus. Wenn keine Tests durchgeführt werden, können auch keine Fehler entdeckt werden. Um sicherzustellen, dass eine instabile Codebasis nicht gemergt wird, habe ich während meiner Ausbildung Jenkins eingesetzt. Obwohl es nicht meine Hauptaufgabe war, Jenkins zu konfigurieren, habe ich täglich damit die Stabilität meines Codes überprüft. Darüber hinaus habe ich Jenkins verwendet, um den Code beim Release auf die Webserver zu deployen. Bei uns wurde GitLab so konfiguriert, dass ein Merge in den Branches main/master/develop nur dann möglich war, wenn Jenkins zuvor die Qualität sichergestellt hatte."
+    },
+    "c-sharp": {
+      "title": "C#",
+      "text": "Meine Reise mit C# begann während meines Fachabiturs an der BBS1 Technik Kaiserslautern, wo ich mich auf Anwendungsentwicklung spezialisierte. Hier entdeckte ich schnell meine Vorliebe für die Programmiersprache und die Entwicklungsumgebung von Microsoft. Während eines Praktikums in einem Unternehmen, bei dem ich C# für ein Projekt einsetzen musste, wurde mein Interesse an dieser Sprache weiter gestärkt. Dies motivierte mich dazu, mich auch in meiner Freizeit intensiv mit C# zu beschäftigen. Während dieser Zeit erkundete ich verschiedene Erweiterungen wie beispielsweise LINQ oder SQLKata, um sie als Query Builder für meine SQLite-Datenbank zu verwenden."
+    },
+    "mvvm": {
+      "title": "MVVM (Caliburn Micro)",
+      "text": "Als ich mir C# beigebracht habe, habe ich die meiste Zeit damit verbracht, Windows Forms-Anwendungen zu entwickeln. Da Windows Forms in Bezug auf die Skalierbarkeit der grafischen Benutzeroberfläche relativ eingeschränkt ist, habe ich mich verstärkt mit WPF auseinandergesetzt. Obwohl WPF auf den ersten Blick deutlich komplexer erscheint, habe ich die Herausforderung genossen und konnte mich schnell damit vertraut machen. Allerdings habe ich auch hier bald erkannt, dass die Arbeit mit Daten in Textfeldern und anderen Elementen zeitaufwendig sein kann, weshalb ich mich mit MVVM auseinandergesetzt habe. Als Framework habe ich Caliburn Micro verwendet, das sowohl für Anfänger geeignet als auch leistungsstark ist."
+    },
+    "server": {
+      "title": "Server Management",
+      "text1": "Ein Freund hat mir viel von seinem Server bei sich zu Hause erzählt. Das Ganze hat sich für mich so interessant angehört, dass ich mich dazu entschieden habe, mir auch einen Server zu holen. Das Betriebssystem auf meinem Server ist Proxmox. Das Gute an Proxmox ist, dass es komplett auf VMs basiert. Das bedeutet, dass es eine Plattform bietet, um VMs zu erstellen und zu verwalten. Dazu gehört auch das gesamte Management der VMs, wie Monitoring oder Backup-Systeme. Für Proxmox habe ich mich auf die Empfehlung eines Freundes hin entschieden.",
+      "text2": "Auf meinem Server laufen aktuell mehrere VMs, die verschiedene Aufgaben haben. Um den Speicher der VMs zu managen, kommt bei mir TrueNAS Scale zum Einsatz, das selbst auch in einer VM läuft. TrueNAS kümmert sich um das Freigeben von sogenannten \"Shares\", die alle ihre eigenen Rechte haben. Die VMs unter TrueNAS binden diese Shares ein und können dann ganz normal den Speicherplatz nutzen, der von TrueNAS verwaltet wird, als gehöre der Speicher zum System.",
+      "text3": "Auf allen VMs, außer der TrueNAS-VM, läuft Ubuntu Server. Zum Hosten verschiedener Services und Webseiten kommt dabei häufig Docker/Docker Compose zum Einsatz. Ich bin ein großer Fan von Docker, da Docker es einem sehr einfach macht, Webseiten auf verschiedenen Systemen zu hosten, ohne die Systeme anpassen zu müssen. Man konfiguriert einfach Docker bzw. schreibt seine Dockerfile und führt diese aus, und schon läuft alles so, wie es soll. Auch die Webseite, auf der Sie sich aktuell befinden, läuft in einem Docker-Container mit Vue.js als Basis. Diese Webseite wird von mir privat gehostet. Sollten Sie Interesse an dem Code dieser Webseite haben, dann schauen Sie gerne auf meiner GitHub Seite vorbei, welche Sie ganz unten auf der Webseite finden.",
+      "text4": "Natürlich spielt Sicherheit eine große Rolle im Internet. Eine gute Firewall ist unverzichtbar, wenn man Webseiten hostet. Als Firewall benutze ich bei mir zu Hause die eingebaute Firewall meiner FRITZ!Box. Außerdem gebe ich nur Webseiten/Services nach außen hin frei, die auch wirklich von außen erreichbar sein sollen. Zusätzlich halte ich alle meine Webseiten und Betriebssysteme stets aktuell, um so viele Sicherheitslücken wie möglich zu schließen.",
+      "text5": "Mittlerweile hoste ich über meinen Server ca. 15 Webseiten und Services, die ich stetig aktuell halte."
+    }
+  },
+  "project": {
+    "title": "Projekte / Praktika",
+    "fraunhofer": {
+      "title": "Fraunhofer ITWM",
+      "text": "Im Zuge meines Fachabiturs bekam ich am Ende des zweiten Jahres, wegen meinen Leistungen, die Möglichkeit mein Abschlussprojekt beim Fraunhofer ITWM in Kaiserslautern zu absolvieren. Dabei habe ich eine bestehende Software zur Auswertung von verschiedenen Automobildaten erweitert, welche unter anderem mittels Graphen die Beständigkeit und die Belastbarkeit von Autoteilen bestimmen kann. Meine Aufgabe war dabei bestehende Pointer in dem C++ Programm durch \"Smarte Pointer\" zu ersetzen. Der Vorteil dieser Pointer ist, dass sie wissen, wenn sie nicht mehr gebraucht werden und dann selbstständig ihren Speicher freigeben. Außerdem habe ich bestehende Fenster um ein paar weitere Eingabefelder mittels Qt erweitert."
+    },
+    "hit-robot": {
+      "title": "BBS1 HIT-Roboter-AG",
+      "text1": "Die HIT-Roboter-AG war eine freiwillige Arbeitsgemeinschaft während meines Fachabiturs. In dieser AG ging es darum, eigenständig einen Roboter zu bauen, der mithilfe eines Programms gesteuert werden konnte. Dieser sollte anschließend in der Lage sein, alleine einer schwarzen Linie auf weißem Hintergrund zu folgen.",
+      "text2": "Dafür kamen zwei einfache Motoren mit Rädern, eine Powerbank, mehrere Sensoren mit Widerständen und ein Raspberry Pi zum Einsatz. Als Programmiersprache wurde Python verwendet.",
+      "text3": "Zu Beginn musste der Roboter gebaut werden. Dabei wurden die Motoren und Sensoren in Reihe mit Widerständen geschaltet, um die Spannung anzupassen. Sowohl die Sensoren als auch die Motoren wurden anschließend an die GPIO-Pins des Raspberry Pi angeschlossen. Das erste Programm bestand darin, den Roboter auf Anweisung hin zu bewegen. Wenn also eine Taste auf der Tastatur gedrückt wurde, sollte sich der Roboter entsprechend bewegen. Nachdem diese Funktion implementiert war, wurde das Programm so erweitert, dass es die Sensordaten auslesen und die Motoren entsprechend steuern konnte, um der Linie zu folgen."
+    },
+    "aop": {
+      "title": "AoP UG",
+      "text": "Während meines sechswöchigen Praktikums während meines Fachabiturs arbeitete ich in einem Einzelunternehmen. Meine Aufgabe bestand darin, eine Desktop-Applikation zu entwickeln, die als Garantiezeitverwaltung dienen sollte. Die Anwendung sollte es ermöglichen, Artikel mit Informationen darüber zu speichern, wo sie gekauft wurden, wann der Kauf erfolgte und wie lange die Garantie dafür gilt. Alle diese Informationen sollten in einem DataGrid angezeigt werden, das die Daten aus einer SQL-Server-Datenbank im Hintergrund ausliest. Die gesamte Anwendung wurde mit C# entwickelt und mit Windows Forms gestaltet. Mir wurde dabei freie Hand gelassen, wie ich das Programm gestalte."
+    },
+    "spinning-mill": {
+      "title": "Spinnerei Lampertsmühle GmbH",
+      "text": "Während meiner Schulzeit absolvierte ich ein Praktikum in der Spinnerei Lampertsmühle. In dieser Zeit führte ich verschiedene Tätigkeiten als Schlosser und Einrichter für die Spinnmaschinen auf dem Firmengelände aus. Meine Aufgaben umfassten die Überprüfung der Garnqualität sowie gegebenenfalls die Nachjustierung der Maschinen. Darüber hinaus war ich auch an der Vorbereitung der Maschinen für neue Garne beteiligt, da diese entsprechend den Kundenanforderungen eingestellt werden mussten. Wir erhielten klare Vorgaben vom Kunden, denen ich sehr genau folgen musste. Abhängig von der Garnstärke wurden dann die erforderlichen Zahnräder eingebaut."
+    }
+  },
+  "cv": {
+    "title": "Lebenslauf",
+    "alzura": {
+      "location": "Kaiserslautern Deutschland",
+      "name": "ALZURA AG",
+      "until": "Jetzt",
+      "text": "In diesem Unternehmen habe ich meine Ausbildung als Fachinformatiker Anwendungsentwicklung für 3 Jahre gemacht.\n    Aktuell werde ich Vollzeit als Full-Stack Developer in der Webentwicklung eingesetzt."
+    },
+    "bbs1": {
+      "location": "BBS1-Technik Kaiserslautern Deutschland",
+      "name": "Höhere Berufsfachschule Informationstechnik",
+      "until": "August 2020",
+      "text": "Im August 2018 habe ich mein zweijähriges Fachabitur im Bereich Informationstechnik begonnen und im zweiten\n    Jahr den Schwerpunkt auf die Anwendungsentwicklung gelegt."
+    },
+    "education": {
+      "location": "Kaiserslautern Deutschland",
+      "name": "Schulische Grundbildung",
+      "until": "August 2018",
+      "from": "August 2007",
+      "text": "Meine Schulische Grundbildung habe ich im August 2018 mit der 10ten Klasse abgeschlossen."
+    }
+  },
+  "language": {
+    "german": {
+      "name": "Deutsch",
+      "level": "Muttersprache"
+    },
+    "english": {
+      "name": "Englisch",
+      "level": "C1"
+    },
+    "japanese": {
+      "name": "Japanisch",
+      "level": "Anfänger"
+    }
+  },
+  "fun-facts": {
+    "cat-videos": "Katzen Videos geschaut",
+    "series": "Serien abgeschlossen",
+    "manga": "Manga im Besitz",
+    "websites": "Gehostete Webseiten"
+  }
+}

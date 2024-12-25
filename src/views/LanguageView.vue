@@ -1,29 +1,31 @@
 <script setup>
 import SectionHeader from "@/components/SectionHeader.vue";
-import {ref} from "vue";
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 
-const languages = ref([
-  {language: 'Deutsch', niveau: 'Muttersprache'},
-  {language: 'Englisch', niveau: 'C1'},
-  {language: 'Japanisch', niveau: 'Anfänger'},
-])
+const languages = computed(() => [
+  {language: t('language.german.name'), level: t('language.german.level')},
+  {language: t('language.english.name'), level: t('language.english.level')},
+  {language: t('language.japanese.name'), level: t('language.japanese.level')},
+]);
 </script>
 
 <template>
   <div class="p-4">
-    <SectionHeader title="Sprachen" />
+    <SectionHeader :title="t('misc.language', 2)" />
 
     <table class="table text-center">
       <thead>
       <tr>
-        <th scope="col">Sprache</th>
-        <th scope="col">Niveau</th>
+        <th scope="col">{{t('misc.language', 1)}}</th>
+        <th scope="col">{{t('misc.level')}}</th>
       </tr>
       </thead>
       <tbody>
       <tr v-for="(item, key) in languages" :key="key">
         <td>{{item.language}}</td>
-        <td>{{item.niveau}}</td>
+        <td>{{item.level}}</td>
       </tr>
       </tbody>
     </table>
