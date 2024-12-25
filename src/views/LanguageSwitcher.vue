@@ -1,4 +1,5 @@
 <script setup>
+import Cookies from 'js-cookie';
 import { ref, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useRoute, useRouter } from 'vue-router';
@@ -13,18 +14,19 @@ const updateLocale = () => {
   locale.value = newLocale;
   selectedLocale.value = newLocale;
   router.push({ query: { locale: newLocale } });
+  Cookies.set('locale', newLocale, { expires: 30 });
 };
 
 watch(
   () => route.query,
   (query) => {
-    const queryLocale = query.locale;
+    const queryOrCookieLocale = query.locale ?? Cookies.get('locale');
 
-    if (undefined === queryLocale) {
+    if (undefined === queryOrCookieLocale) {
       return;
     }
 
-    selectedLocale.value = queryLocale;
+    selectedLocale.value = queryOrCookieLocale;
     updateLocale();
   },
   { immediate: true }
