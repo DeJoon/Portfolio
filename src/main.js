@@ -9,15 +9,11 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { createApp } from 'vue';
 import App from './App.vue';
-import meImage from './assets/img/me.jpg';
 import i18n from './i18n.js';
 import router from './router';
 
 config.autoAddCss = false;
 library.add(fas, fab, far);
-
-const head = document.head;
-head.innerHTML = head.innerHTML.replace('%url%', window.location.origin).replace('%image_url%', `${window.location.origin}${meImage}`);
 
 createApp(App)
   .use(i18n)
