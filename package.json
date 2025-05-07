@@ -27,6 +27,6 @@
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-vue": "^9.32.0",
     "sass": "^1.66.1",
-    "vite": "^6.2.7"
+    "vite": "^6.3.5"
   }
 }
