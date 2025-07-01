@@ -19,7 +19,7 @@ const profile = computed(() => [
   { title: t('misc.birthday'), value: d(new Date(2001, 9, 4), 'long') },
   { title: t('misc.age'), value: calculateAge() },
   { title: t('misc.sex.gender'), value: t('misc.sex.male') },
-  { title: t('misc.mail'), value: 'jandein04+business@gmail.com' },
+  { title: t('misc.mail'), value: 'business@jan-dein.com' },
 ]);
 </script>
 

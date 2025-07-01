@@ -6,7 +6,7 @@ import SectionHeader from '@/components/SectionHeader.vue';
 const findMeOnPages = ref([
   { href: 'https://github.com/DeJoon', icon: ['fab', 'github'] },
   { href: 'https://discord.com', icon: ['fab', 'discord'], text: '@dejoon' },
-  { href: 'mailto:jandein04+business@gmail.com', icon: ['fas', 'envelope'] },
+  { href: 'mailto:business@jan-dein.com', icon: ['fas', 'envelope'] },
 ]);
 </script>
 
