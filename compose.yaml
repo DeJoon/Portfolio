@@ -1,0 +1,19 @@
+networks:
+  portfolio:
+
+services:
+  portfolio:
+    build: ./
+    image: production-stage
+    container_name: portfolio
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Berlin
+    ports:
+      - 4444:80
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - portfolio

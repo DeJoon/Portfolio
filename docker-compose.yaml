@@ -1,7 +1,0 @@
-services:
-    portfolio:
-        build: ./
-        image: production-stage
-        restart: always
-        ports:
-            - "8000:80"
